@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Raw and temporary data
+data/raw/*
+!data/raw/public/
+!data/raw/external/
+data/raw/public/*
+!data/raw/public/.gitkeep
+data/raw/external/*
+!data/raw/external/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+
+# Downloaded documents
+documents/*
+!documents/certificates/
+!documents/municipal/
+!documents/schemes/
+!documents/identity/
+!documents/other_services/
+documents/certificates/*
+documents/municipal/*
+documents/schemes/*
+documents/identity/*
+documents/other_services/*
+!documents/certificates/.gitkeep
+!documents/municipal/.gitkeep
+!documents/schemes/.gitkeep
+!documents/identity/.gitkeep
+!documents/other_services/.gitkeep
+*.pdf
+*.zip
+*.parquet
+
+# Local databases / caches
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

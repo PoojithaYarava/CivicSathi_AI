@@ -1,0 +1,13 @@
+telangana:
+  homepage: "https://www.telangana.gov.in/"
+  state_services: "https://www.telangana.gov.in/services/state-services/"
+  forms: "https://www.telangana.gov.in/services/public-utility-forms/"
+  central_services: "https://www.telangana.gov.in/services/central-services/"
+meeseva:
+  services: "https://ts.meeseva.telangana.gov.in/TSDeptPortal/UserInterface/Services.html"
+hyderabad:
+  homepage: "https://hyderabad.telangana.gov.in/"
+tg_dex:
+  databank: "https://tgdex.telangana.gov.in/data-bank"
+india:
+  open_data: "https://data.gov.in/"

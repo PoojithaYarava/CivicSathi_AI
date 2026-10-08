@@ -1,0 +1,24 @@
+﻿service_id,service_name,service_name_telugu,department,category,description,eligibility,required_documents,application_steps,application_mode,service_charge,sla,official_application_url,official_form_url,status_tracking_url,complaint_url,state,district,source_url,last_verified
+TS0001,Birth Certificate,,Commissioner & Director of Municipal Administration,Certificates,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0002,Death Certificate,,Commissioner & Director of Municipal Administration,Certificates,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0003,Property tax online payment,,Commissioner & Director of Municipal Administration,Property Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0004,Permission for Water Connections,,Commissioner & Director of Municipal Administration,Water Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0005,Issuance of statutory forms,,Department of Commercial Taxes,Business Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0006,e-Return Filing,,Department of Commercial Taxes,Business Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0007,Online Registration System for OPD Appointment,,"Department of Health, Medical and Family Welfare",Health Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0008,Patient Registration,,"Department of Health, Medical and Family Welfare",Health Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0009,e-Payment of Bills / ePayment of Water Bill,,HMWSSB,Water Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0010,Application for Water Connection (business),,"HMWSSB, Commissioner & Director of Municipal Administration",Water Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0011,Building or development permit,,Municipal Administration & Urban Development Department,Municipal Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0012,Occupancy Certificate,,Municipal Administration & Urban Development Department,Certificates,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0013,Request for FIR copy,,Police Department,Police Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0014,Online application of Marriage Certificate,,Registration & Stamps Department,Certificates,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0015,Apply online for Encumbrance Certificate,,Registration & Stamps Department,Property Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0016,Record of Rights (ROR),,Revenue Department,Revenue Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0017,Mutation of Revenue Records,,Revenue Department,Revenue Services,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0018,Domicile Certificate / Residence Certificate,,Revenue Department,Certificates,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0019,Online application of Caste Certificate,,Revenue Department,Certificates,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0020,Online application of Income certificate,,Revenue Department,Certificates,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0021,Scholarships for students,,Social Welfare Department,Education,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0022,Online application for Scholarship,,Social Welfare Department,Education,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08
+TS0023,e-Payment of Electricity Bills (Citizen),,"TSSPDCL, TSNPDCL",Payments,,,,,,,,,,,,Telangana,,https://www.telangana.gov.in/services/state-services/,2026-10-08

@@ -1,0 +1,625 @@
+﻿complaint_id,query,language,complaint_category,issue_type,location,urgency,department,required_information,action,source_type
+CC00001,The street light is not working,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00002,The street light is not working please,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00003,The street light is not working needs attention,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00004,The street light is not working reported,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00005,The street light is not working kindly resolve,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00006,The street light is not working please help,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00007,The street light is not working I need assistance,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00008,The street light is not working please address this,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00009,The street light is not working can this be fixed,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00010,The street light is not working requesting support,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00011,The street light is not working this is causing inconvenience,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00012,The street light is not working please inspect,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00013,The street light is not working it remains unresolved,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00014,The street light is not working please take action,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00015,The street light is not working seeking a resolution,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00016,The street light is not working kindly look into this,English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00017,వీధి దీపం పని చేయడం లేదు,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00018,వీధి దీపం పని చేయడం లేదు దయచేసి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00019,వీధి దీపం పని చేయడం లేదు సమస్య ఉంది,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00020,వీధి దీపం పని చేయడం లేదు పరిష్కరించండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00021,వీధి దీపం పని చేయడం లేదు గమనించండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00022,వీధి దీపం పని చేయడం లేదు సహాయం కావాలి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00023,వీధి దీపం పని చేయడం లేదు దయచేసి చూడండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00024,వీధి దీపం పని చేయడం లేదు పరిష్కారం కావాలి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00025,వీధి దీపం పని చేయడం లేదు చర్య తీసుకోండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00026,వీధి దీపం పని చేయడం లేదు దృష్టి పెట్టండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00027,వీధి దీపం పని చేయడం లేదు ఇంకా సమస్య ఉంది,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00028,వీధి దీపం పని చేయడం లేదు పరిశీలించండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00029,వీధి దీపం పని చేయడం లేదు త్వరగా పరిష్కరించండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00030,వీధి దీపం పని చేయడం లేదు సహాయం చేయండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00031,వీధి దీపం పని చేయడం లేదు ఫిర్యాదు నమోదు చేయండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00032,వీధి దీపం పని చేయడం లేదు దయచేసి స్పందించండి,Telugu,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00033,maa veedhi street light pani cheyyatledu,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00034,maa veedhi street light pani cheyyatledu please,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00035,maa veedhi street light pani cheyyatledu issue undi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00036,maa veedhi street light pani cheyyatledu resolve cheyyandi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00037,maa veedhi street light pani cheyyatledu help kavali,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00038,maa veedhi street light pani cheyyatledu konchem chudandi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00039,maa veedhi street light pani cheyyatledu action teesukondi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00040,maa veedhi street light pani cheyyatledu problem continue avutondi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00041,maa veedhi street light pani cheyyatledu complaint register cheyyandi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00042,maa veedhi street light pani cheyyatledu please respond,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00043,maa veedhi street light pani cheyyatledu urgent ga chudandi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00044,maa veedhi street light pani cheyyatledu support kavali,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00045,maa veedhi street light pani cheyyatledu check cheyyandi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00046,maa veedhi street light pani cheyyatledu inka fix avvaledu,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00047,maa veedhi street light pani cheyyatledu solution ivvandi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00048,maa veedhi street light pani cheyyatledu dayachesi help cheyyandi,Telugu-English,Street Light,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00049,The road is damaged,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00050,The road is damaged please,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00051,The road is damaged needs attention,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00052,The road is damaged reported,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00053,The road is damaged kindly resolve,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00054,The road is damaged please help,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00055,The road is damaged I need assistance,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00056,The road is damaged please address this,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00057,The road is damaged can this be fixed,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00058,The road is damaged requesting support,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00059,The road is damaged this is causing inconvenience,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00060,The road is damaged please inspect,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00061,The road is damaged it remains unresolved,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00062,The road is damaged please take action,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00063,The road is damaged seeking a resolution,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00064,The road is damaged kindly look into this,English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00065,రోడ్డు దెబ్బతింది,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00066,రోడ్డు దెబ్బతింది దయచేసి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00067,రోడ్డు దెబ్బతింది సమస్య ఉంది,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00068,రోడ్డు దెబ్బతింది పరిష్కరించండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00069,రోడ్డు దెబ్బతింది గమనించండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00070,రోడ్డు దెబ్బతింది సహాయం కావాలి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00071,రోడ్డు దెబ్బతింది దయచేసి చూడండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00072,రోడ్డు దెబ్బతింది పరిష్కారం కావాలి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00073,రోడ్డు దెబ్బతింది చర్య తీసుకోండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00074,రోడ్డు దెబ్బతింది దృష్టి పెట్టండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00075,రోడ్డు దెబ్బతింది ఇంకా సమస్య ఉంది,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00076,రోడ్డు దెబ్బతింది పరిశీలించండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00077,రోడ్డు దెబ్బతింది త్వరగా పరిష్కరించండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00078,రోడ్డు దెబ్బతింది సహాయం చేయండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00079,రోడ్డు దెబ్బతింది ఫిర్యాదు నమోదు చేయండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00080,రోడ్డు దెబ్బతింది దయచేసి స్పందించండి,Telugu,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00081,maa area lo road damage ayyindi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00082,maa area lo road damage ayyindi please,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00083,maa area lo road damage ayyindi issue undi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00084,maa area lo road damage ayyindi resolve cheyyandi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00085,maa area lo road damage ayyindi help kavali,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00086,maa area lo road damage ayyindi konchem chudandi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00087,maa area lo road damage ayyindi action teesukondi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00088,maa area lo road damage ayyindi problem continue avutondi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00089,maa area lo road damage ayyindi complaint register cheyyandi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00090,maa area lo road damage ayyindi please respond,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00091,maa area lo road damage ayyindi urgent ga chudandi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00092,maa area lo road damage ayyindi support kavali,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00093,maa area lo road damage ayyindi check cheyyandi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00094,maa area lo road damage ayyindi inka fix avvaledu,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00095,maa area lo road damage ayyindi solution ivvandi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00096,maa area lo road damage ayyindi dayachesi help cheyyandi,Telugu-English,Road Damage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00097,Garbage has not been collected,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00098,Garbage has not been collected please,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00099,Garbage has not been collected needs attention,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00100,Garbage has not been collected reported,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00101,Garbage has not been collected kindly resolve,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00102,Garbage has not been collected please help,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00103,Garbage has not been collected I need assistance,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00104,Garbage has not been collected please address this,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00105,Garbage has not been collected can this be fixed,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00106,Garbage has not been collected requesting support,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00107,Garbage has not been collected this is causing inconvenience,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00108,Garbage has not been collected please inspect,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00109,Garbage has not been collected it remains unresolved,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00110,Garbage has not been collected please take action,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00111,Garbage has not been collected seeking a resolution,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00112,Garbage has not been collected kindly look into this,English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00113,చెత్త సేకరించడం లేదు,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00114,చెత్త సేకరించడం లేదు దయచేసి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00115,చెత్త సేకరించడం లేదు సమస్య ఉంది,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00116,చెత్త సేకరించడం లేదు పరిష్కరించండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00117,చెత్త సేకరించడం లేదు గమనించండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00118,చెత్త సేకరించడం లేదు సహాయం కావాలి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00119,చెత్త సేకరించడం లేదు దయచేసి చూడండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00120,చెత్త సేకరించడం లేదు పరిష్కారం కావాలి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00121,చెత్త సేకరించడం లేదు చర్య తీసుకోండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00122,చెత్త సేకరించడం లేదు దృష్టి పెట్టండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00123,చెత్త సేకరించడం లేదు ఇంకా సమస్య ఉంది,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00124,చెత్త సేకరించడం లేదు పరిశీలించండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00125,చెత్త సేకరించడం లేదు త్వరగా పరిష్కరించండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00126,చెత్త సేకరించడం లేదు సహాయం చేయండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00127,చెత్త సేకరించడం లేదు ఫిర్యాదు నమోదు చేయండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00128,చెత్త సేకరించడం లేదు దయచేసి స్పందించండి,Telugu,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00129,maa area lo garbage collect cheyyatledu,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00130,maa area lo garbage collect cheyyatledu please,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00131,maa area lo garbage collect cheyyatledu issue undi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00132,maa area lo garbage collect cheyyatledu resolve cheyyandi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00133,maa area lo garbage collect cheyyatledu help kavali,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00134,maa area lo garbage collect cheyyatledu konchem chudandi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00135,maa area lo garbage collect cheyyatledu action teesukondi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00136,maa area lo garbage collect cheyyatledu problem continue avutondi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00137,maa area lo garbage collect cheyyatledu complaint register cheyyandi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00138,maa area lo garbage collect cheyyatledu please respond,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00139,maa area lo garbage collect cheyyatledu urgent ga chudandi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00140,maa area lo garbage collect cheyyatledu support kavali,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00141,maa area lo garbage collect cheyyatledu check cheyyandi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00142,maa area lo garbage collect cheyyatledu inka fix avvaledu,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00143,maa area lo garbage collect cheyyatledu solution ivvandi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00144,maa area lo garbage collect cheyyatledu dayachesi help cheyyandi,Telugu-English,Garbage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00145,The drainage is blocked,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00146,The drainage is blocked please,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00147,The drainage is blocked needs attention,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00148,The drainage is blocked reported,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00149,The drainage is blocked kindly resolve,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00150,The drainage is blocked please help,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00151,The drainage is blocked I need assistance,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00152,The drainage is blocked please address this,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00153,The drainage is blocked can this be fixed,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00154,The drainage is blocked requesting support,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00155,The drainage is blocked this is causing inconvenience,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00156,The drainage is blocked please inspect,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00157,The drainage is blocked it remains unresolved,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00158,The drainage is blocked please take action,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00159,The drainage is blocked seeking a resolution,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00160,The drainage is blocked kindly look into this,English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00161,మురుగు కాలువ మూసుకుపోయింది,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00162,మురుగు కాలువ మూసుకుపోయింది దయచేసి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00163,మురుగు కాలువ మూసుకుపోయింది సమస్య ఉంది,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00164,మురుగు కాలువ మూసుకుపోయింది పరిష్కరించండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00165,మురుగు కాలువ మూసుకుపోయింది గమనించండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00166,మురుగు కాలువ మూసుకుపోయింది సహాయం కావాలి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00167,మురుగు కాలువ మూసుకుపోయింది దయచేసి చూడండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00168,మురుగు కాలువ మూసుకుపోయింది పరిష్కారం కావాలి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00169,మురుగు కాలువ మూసుకుపోయింది చర్య తీసుకోండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00170,మురుగు కాలువ మూసుకుపోయింది దృష్టి పెట్టండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00171,మురుగు కాలువ మూసుకుపోయింది ఇంకా సమస్య ఉంది,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00172,మురుగు కాలువ మూసుకుపోయింది పరిశీలించండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00173,మురుగు కాలువ మూసుకుపోయింది త్వరగా పరిష్కరించండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00174,మురుగు కాలువ మూసుకుపోయింది సహాయం చేయండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00175,మురుగు కాలువ మూసుకుపోయింది ఫిర్యాదు నమోదు చేయండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00176,మురుగు కాలువ మూసుకుపోయింది దయచేసి స్పందించండి,Telugu,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00177,maa veedhi drainage block ayyindi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00178,maa veedhi drainage block ayyindi please,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00179,maa veedhi drainage block ayyindi issue undi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00180,maa veedhi drainage block ayyindi resolve cheyyandi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00181,maa veedhi drainage block ayyindi help kavali,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00182,maa veedhi drainage block ayyindi konchem chudandi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00183,maa veedhi drainage block ayyindi action teesukondi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00184,maa veedhi drainage block ayyindi problem continue avutondi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00185,maa veedhi drainage block ayyindi complaint register cheyyandi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00186,maa veedhi drainage block ayyindi please respond,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00187,maa veedhi drainage block ayyindi urgent ga chudandi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00188,maa veedhi drainage block ayyindi support kavali,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00189,maa veedhi drainage block ayyindi check cheyyandi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00190,maa veedhi drainage block ayyindi inka fix avvaledu,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00191,maa veedhi drainage block ayyindi solution ivvandi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00192,maa veedhi drainage block ayyindi dayachesi help cheyyandi,Telugu-English,Drainage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00193,There is no water supply,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00194,There is no water supply please,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00195,There is no water supply needs attention,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00196,There is no water supply reported,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00197,There is no water supply kindly resolve,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00198,There is no water supply please help,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00199,There is no water supply I need assistance,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00200,There is no water supply please address this,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00201,There is no water supply can this be fixed,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00202,There is no water supply requesting support,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00203,There is no water supply this is causing inconvenience,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00204,There is no water supply please inspect,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00205,There is no water supply it remains unresolved,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00206,There is no water supply please take action,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00207,There is no water supply seeking a resolution,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00208,There is no water supply kindly look into this,English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00209,నీటి సరఫరా లేదు,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00210,నీటి సరఫరా లేదు దయచేసి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00211,నీటి సరఫరా లేదు సమస్య ఉంది,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00212,నీటి సరఫరా లేదు పరిష్కరించండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00213,నీటి సరఫరా లేదు గమనించండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00214,నీటి సరఫరా లేదు సహాయం కావాలి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00215,నీటి సరఫరా లేదు దయచేసి చూడండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00216,నీటి సరఫరా లేదు పరిష్కారం కావాలి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00217,నీటి సరఫరా లేదు చర్య తీసుకోండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00218,నీటి సరఫరా లేదు దృష్టి పెట్టండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00219,నీటి సరఫరా లేదు ఇంకా సమస్య ఉంది,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00220,నీటి సరఫరా లేదు పరిశీలించండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00221,నీటి సరఫరా లేదు త్వరగా పరిష్కరించండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00222,నీటి సరఫరా లేదు సహాయం చేయండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00223,నీటి సరఫరా లేదు ఫిర్యాదు నమోదు చేయండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00224,నీటి సరఫరా లేదు దయచేసి స్పందించండి,Telugu,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00225,maa area lo water supply ledu,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00226,maa area lo water supply ledu please,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00227,maa area lo water supply ledu issue undi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00228,maa area lo water supply ledu resolve cheyyandi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00229,maa area lo water supply ledu help kavali,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00230,maa area lo water supply ledu konchem chudandi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00231,maa area lo water supply ledu action teesukondi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00232,maa area lo water supply ledu problem continue avutondi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00233,maa area lo water supply ledu complaint register cheyyandi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00234,maa area lo water supply ledu please respond,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00235,maa area lo water supply ledu urgent ga chudandi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00236,maa area lo water supply ledu support kavali,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00237,maa area lo water supply ledu check cheyyandi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00238,maa area lo water supply ledu inka fix avvaledu,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00239,maa area lo water supply ledu solution ivvandi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00240,maa area lo water supply ledu dayachesi help cheyyandi,Telugu-English,Water Supply,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00241,Water is leaking from a pipe,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00242,Water is leaking from a pipe please,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00243,Water is leaking from a pipe needs attention,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00244,Water is leaking from a pipe reported,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00245,Water is leaking from a pipe kindly resolve,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00246,Water is leaking from a pipe please help,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00247,Water is leaking from a pipe I need assistance,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00248,Water is leaking from a pipe please address this,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00249,Water is leaking from a pipe can this be fixed,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00250,Water is leaking from a pipe requesting support,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00251,Water is leaking from a pipe this is causing inconvenience,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00252,Water is leaking from a pipe please inspect,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00253,Water is leaking from a pipe it remains unresolved,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00254,Water is leaking from a pipe please take action,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00255,Water is leaking from a pipe seeking a resolution,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00256,Water is leaking from a pipe kindly look into this,English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00257,పైపు నుంచి నీరు కారుతోంది,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00258,పైపు నుంచి నీరు కారుతోంది దయచేసి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00259,పైపు నుంచి నీరు కారుతోంది సమస్య ఉంది,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00260,పైపు నుంచి నీరు కారుతోంది పరిష్కరించండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00261,పైపు నుంచి నీరు కారుతోంది గమనించండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00262,పైపు నుంచి నీరు కారుతోంది సహాయం కావాలి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00263,పైపు నుంచి నీరు కారుతోంది దయచేసి చూడండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00264,పైపు నుంచి నీరు కారుతోంది పరిష్కారం కావాలి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00265,పైపు నుంచి నీరు కారుతోంది చర్య తీసుకోండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00266,పైపు నుంచి నీరు కారుతోంది దృష్టి పెట్టండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00267,పైపు నుంచి నీరు కారుతోంది ఇంకా సమస్య ఉంది,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00268,పైపు నుంచి నీరు కారుతోంది పరిశీలించండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00269,పైపు నుంచి నీరు కారుతోంది త్వరగా పరిష్కరించండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00270,పైపు నుంచి నీరు కారుతోంది సహాయం చేయండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00271,పైపు నుంచి నీరు కారుతోంది ఫిర్యాదు నమోదు చేయండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00272,పైపు నుంచి నీరు కారుతోంది దయచేసి స్పందించండి,Telugu,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00273,pipe nunchi water leakage avutondi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00274,pipe nunchi water leakage avutondi please,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00275,pipe nunchi water leakage avutondi issue undi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00276,pipe nunchi water leakage avutondi resolve cheyyandi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00277,pipe nunchi water leakage avutondi help kavali,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00278,pipe nunchi water leakage avutondi konchem chudandi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00279,pipe nunchi water leakage avutondi action teesukondi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00280,pipe nunchi water leakage avutondi problem continue avutondi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00281,pipe nunchi water leakage avutondi complaint register cheyyandi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00282,pipe nunchi water leakage avutondi please respond,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00283,pipe nunchi water leakage avutondi urgent ga chudandi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00284,pipe nunchi water leakage avutondi support kavali,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00285,pipe nunchi water leakage avutondi check cheyyandi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00286,pipe nunchi water leakage avutondi inka fix avvaledu,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00287,pipe nunchi water leakage avutondi solution ivvandi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00288,pipe nunchi water leakage avutondi dayachesi help cheyyandi,Telugu-English,Water Leakage,Needs review,,Medium,Water Services,"location,description",raise_complaint,synthetic_annotated
+CC00289,Sewage is overflowing,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00290,Sewage is overflowing please,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00291,Sewage is overflowing needs attention,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00292,Sewage is overflowing reported,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00293,Sewage is overflowing kindly resolve,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00294,Sewage is overflowing please help,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00295,Sewage is overflowing I need assistance,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00296,Sewage is overflowing please address this,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00297,Sewage is overflowing can this be fixed,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00298,Sewage is overflowing requesting support,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00299,Sewage is overflowing this is causing inconvenience,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00300,Sewage is overflowing please inspect,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00301,Sewage is overflowing it remains unresolved,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00302,Sewage is overflowing please take action,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00303,Sewage is overflowing seeking a resolution,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00304,Sewage is overflowing kindly look into this,English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00305,మురుగు నీరు పొంగిపోతోంది,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00306,మురుగు నీరు పొంగిపోతోంది దయచేసి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00307,మురుగు నీరు పొంగిపోతోంది సమస్య ఉంది,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00308,మురుగు నీరు పొంగిపోతోంది పరిష్కరించండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00309,మురుగు నీరు పొంగిపోతోంది గమనించండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00310,మురుగు నీరు పొంగిపోతోంది సహాయం కావాలి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00311,మురుగు నీరు పొంగిపోతోంది దయచేసి చూడండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00312,మురుగు నీరు పొంగిపోతోంది పరిష్కారం కావాలి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00313,మురుగు నీరు పొంగిపోతోంది చర్య తీసుకోండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00314,మురుగు నీరు పొంగిపోతోంది దృష్టి పెట్టండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00315,మురుగు నీరు పొంగిపోతోంది ఇంకా సమస్య ఉంది,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00316,మురుగు నీరు పొంగిపోతోంది పరిశీలించండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00317,మురుగు నీరు పొంగిపోతోంది త్వరగా పరిష్కరించండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00318,మురుగు నీరు పొంగిపోతోంది సహాయం చేయండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00319,మురుగు నీరు పొంగిపోతోంది ఫిర్యాదు నమోదు చేయండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00320,మురుగు నీరు పొంగిపోతోంది దయచేసి స్పందించండి,Telugu,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00321,maa area lo sewage overflow avutondi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00322,maa area lo sewage overflow avutondi please,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00323,maa area lo sewage overflow avutondi issue undi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00324,maa area lo sewage overflow avutondi resolve cheyyandi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00325,maa area lo sewage overflow avutondi help kavali,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00326,maa area lo sewage overflow avutondi konchem chudandi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00327,maa area lo sewage overflow avutondi action teesukondi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00328,maa area lo sewage overflow avutondi problem continue avutondi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00329,maa area lo sewage overflow avutondi complaint register cheyyandi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00330,maa area lo sewage overflow avutondi please respond,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00331,maa area lo sewage overflow avutondi urgent ga chudandi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00332,maa area lo sewage overflow avutondi support kavali,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00333,maa area lo sewage overflow avutondi check cheyyandi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00334,maa area lo sewage overflow avutondi inka fix avvaledu,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00335,maa area lo sewage overflow avutondi solution ivvandi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00336,maa area lo sewage overflow avutondi dayachesi help cheyyandi,Telugu-English,Sewage,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00337,Waste is being dumped in a public place,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00338,Waste is being dumped in a public place please,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00339,Waste is being dumped in a public place needs attention,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00340,Waste is being dumped in a public place reported,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00341,Waste is being dumped in a public place kindly resolve,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00342,Waste is being dumped in a public place please help,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00343,Waste is being dumped in a public place I need assistance,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00344,Waste is being dumped in a public place please address this,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00345,Waste is being dumped in a public place can this be fixed,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00346,Waste is being dumped in a public place requesting support,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00347,Waste is being dumped in a public place this is causing inconvenience,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00348,Waste is being dumped in a public place please inspect,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00349,Waste is being dumped in a public place it remains unresolved,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00350,Waste is being dumped in a public place please take action,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00351,Waste is being dumped in a public place seeking a resolution,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00352,Waste is being dumped in a public place kindly look into this,English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00353,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00354,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు దయచేసి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00355,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు సమస్య ఉంది,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00356,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు పరిష్కరించండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00357,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు గమనించండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00358,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు సహాయం కావాలి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00359,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు దయచేసి చూడండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00360,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు పరిష్కారం కావాలి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00361,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు చర్య తీసుకోండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00362,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు దృష్టి పెట్టండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00363,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు ఇంకా సమస్య ఉంది,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00364,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు పరిశీలించండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00365,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు త్వరగా పరిష్కరించండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00366,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు సహాయం చేయండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00367,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు ఫిర్యాదు నమోదు చేయండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00368,బహిరంగ ప్రదేశంలో చెత్త వేస్తున్నారు దయచేసి స్పందించండి,Telugu,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00369,public place lo illegal dumping chestunnaru,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00370,public place lo illegal dumping chestunnaru please,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00371,public place lo illegal dumping chestunnaru issue undi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00372,public place lo illegal dumping chestunnaru resolve cheyyandi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00373,public place lo illegal dumping chestunnaru help kavali,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00374,public place lo illegal dumping chestunnaru konchem chudandi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00375,public place lo illegal dumping chestunnaru action teesukondi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00376,public place lo illegal dumping chestunnaru problem continue avutondi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00377,public place lo illegal dumping chestunnaru complaint register cheyyandi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00378,public place lo illegal dumping chestunnaru please respond,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00379,public place lo illegal dumping chestunnaru urgent ga chudandi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00380,public place lo illegal dumping chestunnaru support kavali,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00381,public place lo illegal dumping chestunnaru check cheyyandi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00382,public place lo illegal dumping chestunnaru inka fix avvaledu,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00383,public place lo illegal dumping chestunnaru solution ivvandi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00384,public place lo illegal dumping chestunnaru dayachesi help cheyyandi,Telugu-English,Illegal Dumping,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00385,The public toilet needs maintenance,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00386,The public toilet needs maintenance please,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00387,The public toilet needs maintenance needs attention,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00388,The public toilet needs maintenance reported,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00389,The public toilet needs maintenance kindly resolve,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00390,The public toilet needs maintenance please help,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00391,The public toilet needs maintenance I need assistance,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00392,The public toilet needs maintenance please address this,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00393,The public toilet needs maintenance can this be fixed,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00394,The public toilet needs maintenance requesting support,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00395,The public toilet needs maintenance this is causing inconvenience,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00396,The public toilet needs maintenance please inspect,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00397,The public toilet needs maintenance it remains unresolved,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00398,The public toilet needs maintenance please take action,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00399,The public toilet needs maintenance seeking a resolution,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00400,The public toilet needs maintenance kindly look into this,English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00401,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00402,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం దయచేసి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00403,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం సమస్య ఉంది,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00404,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం పరిష్కరించండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00405,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం గమనించండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00406,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం సహాయం కావాలి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00407,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం దయచేసి చూడండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00408,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం పరిష్కారం కావాలి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00409,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం చర్య తీసుకోండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00410,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం దృష్టి పెట్టండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00411,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం ఇంకా సమస్య ఉంది,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00412,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం పరిశీలించండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00413,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం త్వరగా పరిష్కరించండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00414,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం సహాయం చేయండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00415,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం ఫిర్యాదు నమోదు చేయండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00416,ప్రజా మరుగుదొడ్డికి మరమ్మతులు అవసరం దయచేసి స్పందించండి,Telugu,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00417,public toilet maintenance kavali,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00418,public toilet maintenance kavali please,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00419,public toilet maintenance kavali issue undi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00420,public toilet maintenance kavali resolve cheyyandi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00421,public toilet maintenance kavali help kavali,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00422,public toilet maintenance kavali konchem chudandi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00423,public toilet maintenance kavali action teesukondi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00424,public toilet maintenance kavali problem continue avutondi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00425,public toilet maintenance kavali complaint register cheyyandi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00426,public toilet maintenance kavali please respond,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00427,public toilet maintenance kavali urgent ga chudandi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00428,public toilet maintenance kavali support kavali,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00429,public toilet maintenance kavali check cheyyandi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00430,public toilet maintenance kavali inka fix avvaledu,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00431,public toilet maintenance kavali solution ivvandi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00432,public toilet maintenance kavali dayachesi help cheyyandi,Telugu-English,Public Toilet,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00433,The traffic signal is not working,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00434,The traffic signal is not working please,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00435,The traffic signal is not working needs attention,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00436,The traffic signal is not working reported,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00437,The traffic signal is not working kindly resolve,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00438,The traffic signal is not working please help,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00439,The traffic signal is not working I need assistance,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00440,The traffic signal is not working please address this,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00441,The traffic signal is not working can this be fixed,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00442,The traffic signal is not working requesting support,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00443,The traffic signal is not working this is causing inconvenience,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00444,The traffic signal is not working please inspect,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00445,The traffic signal is not working it remains unresolved,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00446,The traffic signal is not working please take action,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00447,The traffic signal is not working seeking a resolution,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00448,The traffic signal is not working kindly look into this,English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00449,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00450,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు దయచేసి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00451,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు సమస్య ఉంది,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00452,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు పరిష్కరించండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00453,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు గమనించండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00454,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు సహాయం కావాలి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00455,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు దయచేసి చూడండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00456,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు పరిష్కారం కావాలి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00457,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు చర్య తీసుకోండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00458,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు దృష్టి పెట్టండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00459,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు ఇంకా సమస్య ఉంది,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00460,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు పరిశీలించండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00461,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు త్వరగా పరిష్కరించండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00462,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు సహాయం చేయండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00463,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు ఫిర్యాదు నమోదు చేయండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00464,ట్రాఫిక్ సిగ్నల్ పని చేయడం లేదు దయచేసి స్పందించండి,Telugu,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00465,traffic signal pani cheyyatledu,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00466,traffic signal pani cheyyatledu please,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00467,traffic signal pani cheyyatledu issue undi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00468,traffic signal pani cheyyatledu resolve cheyyandi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00469,traffic signal pani cheyyatledu help kavali,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00470,traffic signal pani cheyyatledu konchem chudandi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00471,traffic signal pani cheyyatledu action teesukondi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00472,traffic signal pani cheyyatledu problem continue avutondi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00473,traffic signal pani cheyyatledu complaint register cheyyandi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00474,traffic signal pani cheyyatledu please respond,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00475,traffic signal pani cheyyatledu urgent ga chudandi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00476,traffic signal pani cheyyatledu support kavali,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00477,traffic signal pani cheyyatledu check cheyyandi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00478,traffic signal pani cheyyatledu inka fix avvaledu,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00479,traffic signal pani cheyyatledu solution ivvandi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00480,traffic signal pani cheyyatledu dayachesi help cheyyandi,Telugu-English,Traffic Signal,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00481,Stray animals are creating a civic issue,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00482,Stray animals are creating a civic issue please,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00483,Stray animals are creating a civic issue needs attention,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00484,Stray animals are creating a civic issue reported,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00485,Stray animals are creating a civic issue kindly resolve,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00486,Stray animals are creating a civic issue please help,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00487,Stray animals are creating a civic issue I need assistance,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00488,Stray animals are creating a civic issue please address this,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00489,Stray animals are creating a civic issue can this be fixed,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00490,Stray animals are creating a civic issue requesting support,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00491,Stray animals are creating a civic issue this is causing inconvenience,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00492,Stray animals are creating a civic issue please inspect,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00493,Stray animals are creating a civic issue it remains unresolved,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00494,Stray animals are creating a civic issue please take action,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00495,Stray animals are creating a civic issue seeking a resolution,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00496,Stray animals are creating a civic issue kindly look into this,English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00497,వీధి జంతువుల వల్ల సమస్య ఉంది,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00498,వీధి జంతువుల వల్ల సమస్య ఉంది దయచేసి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00499,వీధి జంతువుల వల్ల సమస్య ఉంది సమస్య ఉంది,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00500,వీధి జంతువుల వల్ల సమస్య ఉంది పరిష్కరించండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00501,వీధి జంతువుల వల్ల సమస్య ఉంది గమనించండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00502,వీధి జంతువుల వల్ల సమస్య ఉంది సహాయం కావాలి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00503,వీధి జంతువుల వల్ల సమస్య ఉంది దయచేసి చూడండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00504,వీధి జంతువుల వల్ల సమస్య ఉంది పరిష్కారం కావాలి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00505,వీధి జంతువుల వల్ల సమస్య ఉంది చర్య తీసుకోండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00506,వీధి జంతువుల వల్ల సమస్య ఉంది దృష్టి పెట్టండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00507,వీధి జంతువుల వల్ల సమస్య ఉంది ఇంకా సమస్య ఉంది,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00508,వీధి జంతువుల వల్ల సమస్య ఉంది పరిశీలించండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00509,వీధి జంతువుల వల్ల సమస్య ఉంది త్వరగా పరిష్కరించండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00510,వీధి జంతువుల వల్ల సమస్య ఉంది సహాయం చేయండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00511,వీధి జంతువుల వల్ల సమస్య ఉంది ఫిర్యాదు నమోదు చేయండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00512,వీధి జంతువుల వల్ల సమస్య ఉంది దయచేసి స్పందించండి,Telugu,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00513,stray animals valla problem avutondi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00514,stray animals valla problem avutondi please,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00515,stray animals valla problem avutondi issue undi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00516,stray animals valla problem avutondi resolve cheyyandi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00517,stray animals valla problem avutondi help kavali,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00518,stray animals valla problem avutondi konchem chudandi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00519,stray animals valla problem avutondi action teesukondi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00520,stray animals valla problem avutondi problem continue avutondi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00521,stray animals valla problem avutondi complaint register cheyyandi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00522,stray animals valla problem avutondi please respond,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00523,stray animals valla problem avutondi urgent ga chudandi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00524,stray animals valla problem avutondi support kavali,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00525,stray animals valla problem avutondi check cheyyandi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00526,stray animals valla problem avutondi inka fix avvaledu,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00527,stray animals valla problem avutondi solution ivvandi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00528,stray animals valla problem avutondi dayachesi help cheyyandi,Telugu-English,Stray Animals,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00529,There is excessive noise,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00530,There is excessive noise please,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00531,There is excessive noise needs attention,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00532,There is excessive noise reported,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00533,There is excessive noise kindly resolve,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00534,There is excessive noise please help,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00535,There is excessive noise I need assistance,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00536,There is excessive noise please address this,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00537,There is excessive noise can this be fixed,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00538,There is excessive noise requesting support,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00539,There is excessive noise this is causing inconvenience,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00540,There is excessive noise please inspect,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00541,There is excessive noise it remains unresolved,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00542,There is excessive noise please take action,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00543,There is excessive noise seeking a resolution,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00544,There is excessive noise kindly look into this,English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00545,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00546,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది దయచేసి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00547,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది సమస్య ఉంది,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00548,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది పరిష్కరించండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00549,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది గమనించండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00550,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది సహాయం కావాలి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00551,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది దయచేసి చూడండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00552,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది పరిష్కారం కావాలి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00553,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది చర్య తీసుకోండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00554,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది దృష్టి పెట్టండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00555,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది ఇంకా సమస్య ఉంది,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00556,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది పరిశీలించండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00557,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది త్వరగా పరిష్కరించండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00558,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది సహాయం చేయండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00559,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది ఫిర్యాదు నమోదు చేయండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00560,అధిక శబ్దం వల్ల ఇబ్బంది ఉంది దయచేసి స్పందించండి,Telugu,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00561,maa area lo noise ekkuvaga undi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00562,maa area lo noise ekkuvaga undi please,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00563,maa area lo noise ekkuvaga undi issue undi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00564,maa area lo noise ekkuvaga undi resolve cheyyandi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00565,maa area lo noise ekkuvaga undi help kavali,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00566,maa area lo noise ekkuvaga undi konchem chudandi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00567,maa area lo noise ekkuvaga undi action teesukondi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00568,maa area lo noise ekkuvaga undi problem continue avutondi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00569,maa area lo noise ekkuvaga undi complaint register cheyyandi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00570,maa area lo noise ekkuvaga undi please respond,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00571,maa area lo noise ekkuvaga undi urgent ga chudandi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00572,maa area lo noise ekkuvaga undi support kavali,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00573,maa area lo noise ekkuvaga undi check cheyyandi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00574,maa area lo noise ekkuvaga undi inka fix avvaledu,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00575,maa area lo noise ekkuvaga undi solution ivvandi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00576,maa area lo noise ekkuvaga undi dayachesi help cheyyandi,Telugu-English,Noise Complaint,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00577,I need to report another civic issue,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00578,I need to report another civic issue please,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00579,I need to report another civic issue needs attention,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00580,I need to report another civic issue reported,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00581,I need to report another civic issue kindly resolve,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00582,I need to report another civic issue please help,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00583,I need to report another civic issue I need assistance,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00584,I need to report another civic issue please address this,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00585,I need to report another civic issue can this be fixed,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00586,I need to report another civic issue requesting support,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00587,I need to report another civic issue this is causing inconvenience,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00588,I need to report another civic issue please inspect,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00589,I need to report another civic issue it remains unresolved,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00590,I need to report another civic issue please take action,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00591,I need to report another civic issue seeking a resolution,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00592,I need to report another civic issue kindly look into this,English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00593,మరొక పౌర సమస్యను నివేదించాలి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00594,మరొక పౌర సమస్యను నివేదించాలి దయచేసి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00595,మరొక పౌర సమస్యను నివేదించాలి సమస్య ఉంది,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00596,మరొక పౌర సమస్యను నివేదించాలి పరిష్కరించండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00597,మరొక పౌర సమస్యను నివేదించాలి గమనించండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00598,మరొక పౌర సమస్యను నివేదించాలి సహాయం కావాలి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00599,మరొక పౌర సమస్యను నివేదించాలి దయచేసి చూడండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00600,మరొక పౌర సమస్యను నివేదించాలి పరిష్కారం కావాలి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00601,మరొక పౌర సమస్యను నివేదించాలి చర్య తీసుకోండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00602,మరొక పౌర సమస్యను నివేదించాలి దృష్టి పెట్టండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00603,మరొక పౌర సమస్యను నివేదించాలి ఇంకా సమస్య ఉంది,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00604,మరొక పౌర సమస్యను నివేదించాలి పరిశీలించండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00605,మరొక పౌర సమస్యను నివేదించాలి త్వరగా పరిష్కరించండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00606,మరొక పౌర సమస్యను నివేదించాలి సహాయం చేయండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00607,మరొక పౌర సమస్యను నివేదించాలి ఫిర్యాదు నమోదు చేయండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00608,మరొక పౌర సమస్యను నివేదించాలి దయచేసి స్పందించండి,Telugu,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00609,oka civic issue report cheyyali,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00610,oka civic issue report cheyyali please,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00611,oka civic issue report cheyyali issue undi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00612,oka civic issue report cheyyali resolve cheyyandi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00613,oka civic issue report cheyyali help kavali,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00614,oka civic issue report cheyyali konchem chudandi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00615,oka civic issue report cheyyali action teesukondi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00616,oka civic issue report cheyyali problem continue avutondi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00617,oka civic issue report cheyyali complaint register cheyyandi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00618,oka civic issue report cheyyali please respond,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00619,oka civic issue report cheyyali urgent ga chudandi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00620,oka civic issue report cheyyali support kavali,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00621,oka civic issue report cheyyali check cheyyandi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00622,oka civic issue report cheyyali inka fix avvaledu,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00623,oka civic issue report cheyyali solution ivvandi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
+CC00624,oka civic issue report cheyyali dayachesi help cheyyandi,Telugu-English,Other Civic Issue,Needs review,,Medium,Municipal Administration,"location,description",raise_complaint,synthetic_annotated
