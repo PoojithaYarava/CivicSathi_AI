@@ -14,7 +14,11 @@ Open `http://127.0.0.1:8000`. The server is restricted to loopback addresses. St
 
 ## Deployment status
 
-No production deployment is configured. Do not expose the development server directly to the internet. A public deployment requires a maintained production HTTP server, request throttling, deployment-specific privacy and retention decisions, security review, monitored source updates, secrets review, accessibility/browser testing, and an explicit decision about the external browser speech engine. No credentials are required by the current app. This document is not a claim of production readiness or a live public service.
+No production deployment is configured. For a hosted course preview, the server accepts an explicit `--host 0.0.0.0`; it uses the `PORT` environment variable when `--port` is omitted. Keep the default loopback bind for local use. A hosted preview is not production-ready: a public service needs a maintained production HTTP server, request throttling, deployment-specific privacy and retention decisions, security review, monitored source updates, secrets review, accessibility/browser testing, and an explicit decision about the external browser speech engine. No credentials are required by the current app.
+
+### Render hosted preview
+
+Create a Web Service from the GitHub repository, select the **Python 3** runtime and `main` branch, and leave the service root at the repository root. Set the build command to `pip install -r requirements.txt && python -m src.nlp.train`; set the start command to `python -m src.app.server --host 0.0.0.0`; and set the health check path to `/api/health`. Render provides `PORT`, which the server reads automatically. This setup is for a course preview only.
 
 ## Telangana district directory
 

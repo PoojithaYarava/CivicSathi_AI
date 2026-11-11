@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
@@ -191,10 +192,10 @@ class CivicSathiHandler(BaseHTTPRequestHandler):
 def main():
     parser = argparse.ArgumentParser(description="Run the local CivicSathi read-only assistant")
     parser.add_argument("--host", default="127.0.0.1", help="Bind address (default: localhost only)")
-    parser.add_argument("--port", type=int, default=8000)
+    parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", "8000")))
     args = parser.parse_args()
-    if args.host not in {"127.0.0.1", "localhost", "::1"}:
-        parser.error("For privacy, the development server only binds to loopback addresses")
+    if args.host not in {"127.0.0.1", "localhost", "::1", "0.0.0.0"}:
+        parser.error("Use a loopback host locally, or 0.0.0.0 for an explicitly configured hosted preview")
     app = CivicSathiService()
     server = HTTPServer((args.host, args.port), CivicSathiHandler)
     server.civicsathi = app
