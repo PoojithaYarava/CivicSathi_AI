@@ -1,41 +1,51 @@
-# CivicSathi AI
+﻿# CivicSathi AI
 
-CivicSathi AI is a multilingual citizen-service information assistant for all 33 districts of Telangana. It is an independent project and is not an official government application.
+**Government services, made easier to understand.**
 
-## Current Phase
+CivicSathi is an independent information assistant for Telangana public services. Ask in English, Telugu, or Telugu-English to find service records, forms, schemes, official sources, and researched document checklists.
 
-**End-to-end local MVP: data foundation, multilingual NLP, grounded lookup, and read-only web app**
+> CivicSathi is not a government website. It does not submit applications or complaints, accept payments, decide eligibility, or track application status. Confirm current requirements with the linked official source.
 
-**Status: Implemented locally.** Phase 1 and Phase 2 are complete; a source-grounded response layer and browser interface complete the usable MVP. It is an independent project, not a government application.
+## See the app
 
-The repository establishes source provenance, multilingual-safe cleaning, privacy checks, and synthetic NLP examples. It includes service names/departments and scheme/form names or links explicitly visible on government listing pages. Unknown eligibility, fees, steps, benefits, and active status remain empty; destination links are marked `needs_review` until assessed individually.
+Screenshots below are captured from the running website. Select any image to view it full size.
 
-## Data Governance
+<table>
+  <tr>
+    <td align="center"><a href="docs/images/civicsathi-ask.png"><img src="docs/images/civicsathi-ask.png" width="250" alt="Ask tab"></a><br><sub>Ask</sub></td>
+    <td align="center"><a href="docs/images/civicsathi-search.png"><img src="docs/images/civicsathi-search.png" width="250" alt="Search result"></a><br><sub>Search results</sub></td>
+    <td align="center"><a href="docs/images/civicsathi-services.png"><img src="docs/images/civicsathi-services.png" width="250" alt="Services catalogue"></a><br><sub>Services</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="docs/images/civicsathi-schemes.png"><img src="docs/images/civicsathi-schemes.png" width="250" alt="Schemes catalogue"></a><br><sub>Schemes</sub></td>
+    <td align="center"><a href="docs/images/civicsathi-forms.png"><img src="docs/images/civicsathi-forms.png" width="250" alt="Forms catalogue"></a><br><sub>Forms</sub></td>
+    <td align="center"><a href="docs/images/civicsathi-complaints.png"><img src="docs/images/civicsathi-complaints.png" width="250" alt="Complaint preparation"></a><br><sub>Complaints</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="docs/images/civicsathi-tasks.png"><img src="docs/images/civicsathi-tasks.png" width="250" alt="Saved preparation tasks"></a><br><sub>My tasks</sub></td>
+    <td align="center"><a href="docs/images/civicsathi-sources.png"><img src="docs/images/civicsathi-sources.png" width="250" alt="Official source directory"></a><br><sub>Sources</sub></td>
+    <td align="center"><a href="docs/images/civicsathi-districts.png"><img src="docs/images/civicsathi-districts.png" width="250" alt="Telangana district directory"></a><br><sub>Districts</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="docs/images/civicsathi-about.png"><img src="docs/images/civicsathi-about.png" width="250" alt="About CivicSathi"></a><br><sub>About</sub></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
-The project follows **public government information + synthetic/annotated NLP data + zero real citizen PII**. It does not intentionally collect personal citizen data, access authenticated portals, submit applications or complaints, make payments, bypass CAPTCHA, or store credentials. Never add Aadhaar/PAN, phone, email, OTP, financial, exact-address, or private complaint data.
+## What you can do
 
-Raw snapshots go under `data/raw/public/`; external research inputs go under `data/raw/external/`; temporary extraction files go under `data/interim/`. All are ignored by Git. Processed CSVs are UTF-8 with exact, documented schemas. Downloaded documents are excluded from Git; prefer metadata and official links.
+- Search for services, forms, schemes, and official links in English, Telugu, or Telugu-English.
+- Browse records and select from the Telangana district directory.
+- Review official-source links and see when a record is unverified or may need checking.
+- Prepare documents using a checklist when a researched service scenario is available.
+- Draft civic complaint information before visiting an official channel. CivicSathi does not submit it.
+- Optionally use browser speech recognition and read-aloud controls.
+- Save personal preparation tasks in your browser when you choose.
 
-## Sources
+## Run locally
 
-Configured official starting points are in `config/sources.yaml`. The source registry records the source type and verification state. As checked on 2026-10-08, Telangana state services, forms and central services pages, the Telangana home page, MeeSeva, Hyderabad District, and data.gov.in pages were accessible. Service names/departments and listed form/scheme links were transcribed from those pages; this does not verify destination links, service details, or current activity. TGDeX is marked `needs_review`: its bank describes health and demographic record-level data, which this project must not download without a privacy review.
-
-## Dataset Structure
-
-- `service_catalog.csv`: 23 service names/departments observed on the state listing; details and direct application URLs are blank pending verification.
-- `citizen_queries.csv`: 1,296 deterministic synthetic examples across English, Telugu and Telugu-English, labeled `synthetic_annotated`.
-- `complaint_queries.csv`: 624 synthetic civic complaint examples, with location deliberately blank.
-- `government_schemes.csv`: 5 scheme names and links listed by Hyderabad District; scheme details are blank pending page review.
-- `documents_and_forms.csv`: 6 form/portal names and links listed by Telangana; links are not downloaded and destinations remain under review.
-- `official_sources.csv`: configured source URLs and observed listing links with review status.
-- `service_document_requirements.csv`: scenario-specific document checklist entries transcribed from official MeeSeva/GHMC/district pages, with jurisdiction, conditions, and verification dates. It covers researched services only; a missing checklist means CivicSathi has not verified the requirements.
-- `data/dataset_manifest.csv`: record counts, data owner, provenance, access/publication state, and unassessed licence/terms notes for every processed dataset.
-
-Every government-derived record must preserve `source_url` and `last_verified`; manually written information must never be presented as official. The synthetic language distribution is balanced by construction, not an estimate of citizen behavior.
-
-## Setup
-
-Use Python 3.11 or later. Create and activate an environment, then install dependencies:
+Use Python 3.11 or later. From the project root, create an environment and install dependencies:
 
 ```powershell
 py -3.11 -m venv .venv
@@ -43,90 +53,134 @@ py -3.11 -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-Build the initial CSV package and run checks:
+Train the local intent model and start the app:
 
 ```powershell
-python -m src.data_processing.build_datasets
-pytest
-```
-
-The `origin` remote points to the CivicSathi GitHub repository. Review changes on `main` before publishing updates.
-
-The source collection helpers only fetch public pages and save raw snapshots/candidate extracts to ignored folders. Review candidate records before placing anything in `data/processed/`. No credentials or API keys are needed.
-
-## Languages
-
-Queries may be entered in English, Telugu, or Telugu-English code-mixed text. Cleaning preserves Telugu Unicode and does not transliterate. The UI offers English, Telugu, or bilingual guidance. Official record titles, document names, and quoted source data remain in the language published by the government so translations are not misrepresented as official text. Language identification is heuristic; Telugu and code-mixed quality has not been independently evaluated by native speakers.
-
-The district directory and location selector include all 33 districts from the Government of Telangana district directory. This is geographic navigation, not a claim that every service or document checklist has been researched for every district. Local checklist coverage remains explicitly limited to the official records available in `service_document_requirements.csv`.
-
-## Data Quality
-
-The project validates CSV schemas, identifiers, approved labels, URL formats, provenance registration, text normalization, and common PII-like patterns before synthetic outputs are saved. Review `reports/data_quality_report.md` and run `notebooks/03_data_understanding.ipynb` / `notebooks/04_data_cleaning.ipynb` to inspect current outputs. Listing names are not a substitute for individually verified service, scheme, or form details.
-
-## Phase 2 NLP
-
-The `src/nlp/` package includes Unicode-safe normalization and script heuristics, two TF-IDF classification baselines (word and character features), catalogue-grounded dictionary entities, a TF-IDF retrieval baseline, and an orchestration function. The actual Phase 1 schemas are mapped explicitly. No embedding model, trained NER model, RAG, chatbot, or government transaction feature is included.
-
-Train and evaluate the classifier, build its local artifact, evaluate the small reviewed retrieval set, run tests, and try the integrated pipeline:
-
-```powershell
-python -m src.nlp.train
-python -m src.nlp.retrieval_evaluation
-pytest
-python -c "from src.nlp.pipeline import analyze_citizen_query; print(analyze_citizen_query('income certificate ela apply cheyyali'))"
-```
-
-Use the project virtual environment interpreter for these commands if `python` or `pytest` resolves outside it. The classifier joblib file is stored under `models/nlp/` and ignored by Git; JSON configuration and evaluation metrics are retained. See [the Phase 2 evaluation report](reports/nlp_evaluation_report.md) and `notebooks/05`–`08` for inspection and plots.
-
-The held-out score is perfect on the generated dataset. This is a narrow template-based evaluation, not evidence of production performance. The dataset has limited linguistic diversity and no independent real-citizen evaluation. Telugu-script and code-mixed quality needs review by fluent speakers. Dictionary entity coverage is limited by blank Telugu catalogue names. Retrieval is lexical only, and catalogue descriptions and direct application links are often missing or unverified.
-
-## Local Application
-
-Homepage tagline: **Government services, made easier to understand.**
-
-The read-only browser app searches and browses services, schemes, and forms; shows source URLs and review warnings; and displays reviewed, scenario-specific checklists where available. It also provides editable complaint drafts with official GHMC and Telangana grievance links, plus a personal task dashboard saved only in browser local storage after the citizen chooses Save. Active service context lasts only in the current tab. The complaint view does not submit or track grievances; the task dashboard does not track live government application status. Optional browser speech recognition may process audio externally; Telugu-English accuracy is not verified. The answer is an extractive/template summary, not an LLM answer. Sensitive-pattern matches are rejected before intent classification or retrieval. Requests are handled in memory only; no query history is written. The development server binds to loopback only.
-
-Read-only local API routes are available at `/api/health`, `/api/services`, `/api/schemes`, `/api/documents`, `/api/sources`, `/api/search?q=...`, and `/api/complaints`; query analysis accepts `POST /api/query` (also `/api/analyze`). Complaint draft analysis accepts `POST /api/complaints/draft` or `/api/complaints/analyze` and returns an unsent draft. Browse endpoints accept optional `q`, `department`, `category`, `district`, and `limit` filters where those fields exist in the catalogue. There is intentionally no server-side task API or government submission route.
-
-Build the Phase 1 data if needed, train the local model, then start CivicSathi:
-
-```powershell
-python -m src.data_processing.build_datasets
 python -m src.nlp.train
 python -m src.app.server
 ```
 
-Open `http://127.0.0.1:8000`. Stop the server with `Ctrl+C`. The first two commands are required after cloning because processed datasets and the binary model artifact are local and are not committed. A clean setup and evaluation commands are in the sections above.
+Open <http://127.0.0.1:8000>. Stop the server with `Ctrl+C`.
 
-This MVP does not include generated natural-language advice, multilingual embeddings, an unattended source-crawling/update service, a hosted production deployment, account login, complaint/application submission, payment, or status lookup. Optional browser speech-to-text and text-to-speech are implemented in the UI; recognition may send audio outside the device, depends on the selected locale/browser service, and Telugu-English code-mix is best effort. There is no local speech model. Data gaps and source freshness remain visible and must be resolved before relying on a record.
+The processed CSV datasets are included in the repository. The trained `.joblib` model is generated locally and ignored by Git, so run the training command after cloning. To rebuild the processed data package manually, run `python -m src.data_processing.build_datasets` before training.
 
-## Architecture and Governance
+## How it works
 
-See [architecture](docs/project_architecture.md), [system flow](docs/system_flow.md), [data dictionary](docs/data_dictionary.md), [privacy and data governance](docs/privacy_and_data_governance.md), and [model evaluation](docs/model_evaluation.md).
-
-Additional feature/API notes are in [complaint assistant](docs/complaint_assistant.md), [task tracking](docs/task_tracking.md), [voice processing](docs/voice_processing.md), [service and scheme discovery](docs/service_and_scheme_discovery.md), [document management](docs/document_management.md), [NLP pipeline](docs/nlp_pipeline.md), [API documentation](docs/api_documentation.md), and [deployment](docs/deployment.md).
-
-## Tests
-
-```powershell
-.\.venv\Scripts\python.exe -m pip check
-.\.venv\Scripts\python.exe -m pytest -q
+```mermaid
+flowchart LR
+    Q[English / Telugu / mixed query] --> N[Unicode normalization]
+    N --> L[Heuristic language label]
+    N --> I[Intent classifier]
+    N --> E[Known-entity matching]
+    I --> R[TF-IDF catalogue search]
+    E --> R
+    D[(Local CSV catalogues)] --> E
+    D --> R
+    D --> C[Scenario-specific checklist rules]
+    R --> C
+    R --> A[Source-linked response]
+    C --> A
+    A --> UI[Browser interface]
 ```
 
-The suite covers data schemas, manifest counts, multilingual normalization, classifier fallback, dictionary matching, retrieval provenance, browse and complaint API routes, query handling, and sensitive-input rejection.
+The browser sends queries to a local Python API. The backend normalizes the text, estimates language, predicts an intent, extracts known entities, ranks catalogue records, and returns a response with source context. Responses are built from catalogue information and templates; CivicSathi does not use an LLM to generate answers.
 
-## Notebooks
+## Data included
 
-1. `01_project_setup.ipynb`
-2. `02_data_collection.ipynb`
-3. `03_data_understanding.ipynb`
-4. `04_data_cleaning.ipynb`
-5. `05_nlp_preprocessing.ipynb`
-6. `06_intent_classification.ipynb`
-7. `07_entity_extraction.ipynb`
-8. `08_semantic_retrieval.ipynb`
+| Dataset | Rows | Use |
+|---|---:|---|
+| Citizen query examples | 1,296 | Synthetic: 12 intents × 108 examples; 432 examples each for English, Telugu, and Telugu-English |
+| Complaint query examples | 624 | Synthetic: 13 civic issue categories; 208 examples per language label |
+| Service catalogue | 23 | Service names and available department/source details |
+| Government schemes | 5 | Scheme records |
+| Forms and documents | 6 | Form/document records |
+| Official sources | 28 | Source links; 16 marked verified and 12 marked for review in the local registry |
+| Document requirements | 35 | Checklist items tied to service scenarios and jurisdictions |
+| Telangana districts | 33 | District directory for navigation |
 
-## Project Boundary
+The query examples are synthetic and annotated; they are not real citizen conversations. Source status is a registry field, not a guarantee that a live page is current. The district directory does not mean that every service or checklist has been researched in every district. Checklist coverage is limited to recorded GHMC birth/death cases, MeeSeva residence-certificate scenarios, and a Suryapet-only caste-certificate case. If no checklist matches, check the official source.
 
-The local project is complete as a privacy-preserving information lookup MVP. A production RAG/LLM service or hosted public deployment would require independently reviewed multilingual quality data, verified and maintained government records, an explicit hosting/privacy design, and a separate deployment decision. These are not silently enabled by the local application.
+Official source starting points are listed in `config/sources.yaml`. Collection helpers gather public-page candidates; those records are reviewed and validated before being used in the processed CSV catalogues. The query examples are generated from templates for NLP development and evaluation, not scraped from citizens.
+
+## NLP methods
+
+- **Preprocessing:** Unicode NFC normalization, removal of selected invisible characters, and whitespace cleanup. Telugu script is preserved.
+- **Language identification:** A heuristic checks Telugu/Latin scripts and selected romanized Telugu markers. It is not a trained language-identification model.
+- **Intent classification:** scikit-learn TF-IDF features (word 1–2 grams and character 2–5 grams) feed a Logistic Regression classifier. Calibrated LinearSVC was compared during training. A confidence threshold provides a fallback for uncertain predictions.
+- **Entity extraction:** Longest-first dictionary matching over known service, department, scheme, form, district, and complaint-category records, with date patterns. This is not trained NER.
+- **Retrieval:** Word-level TF-IDF and cosine similarity rank catalogue records. Despite the module filename `semantic_retrieval.py`, this is lexical retrieval; there are no embeddings or vector database.
+
+The held-out intent metrics are perfect on the generated template dataset. They do not show expected performance on real citizens' queries. The retrieval evaluation has only eight manually written English judgments. Telugu and code-mixed quality still need independent native-speaker evaluation.
+
+## Technology
+
+- **Frontend:** HTML, CSS, and browser JavaScript in `src/app/static/index.html`.
+- **Backend:** Python standard-library `HTTPServer` and JSON API.
+- **Data:** UTF-8 CSV files and pandas.
+- **NLP/ML:** scikit-learn, regex, and joblib.
+- **Source-collection utilities:** requests, BeautifulSoup, lxml, and PyYAML.
+- **Notebooks and tests:** Jupyter, matplotlib, seaborn, and pytest.
+- **Database:** None. Query requests are processed in memory; explicitly saved tasks use browser `localStorage`.
+
+## API routes
+
+- `GET /api/health` — service status.
+- `GET /api/services`, `/api/schemes`, `/api/documents` — browse catalogue records.
+- `GET /api/sources`, `/api/districts` — browse source and district records.
+- `GET /api/search?q=...` — rank matching records.
+- `POST /api/query` (also `/api/analyze`) — analyze a citizen query.
+- `POST /api/complaints/analyze` (also `/api/complaints/draft`) — prepare an unsent complaint draft.
+
+## Run checks
+
+```powershell
+python -m pytest -q
+python -m src.nlp.retrieval_evaluation
+```
+
+The tests cover data validation, NLP components, and API behavior. They do not evaluate microphone accuracy or provide a broad real-world language benchmark.
+
+## Deploy a course preview on Render
+
+The app serves both its frontend and backend from one Python web service.
+
+1. Create a Render Web Service connected to this repository and the `main` branch. Select the **Python 3** runtime and leave the root directory at the repository root.
+2. Set the build command to:
+
+   ```bash
+   pip install -r requirements.txt && python -m src.nlp.train
+   ```
+
+3. Set the start command to:
+
+   ```bash
+   python -m src.app.server --host 0.0.0.0
+   ```
+
+4. Set the health check path to `/api/health`, then deploy.
+
+The server reads Render's `PORT` environment variable. This is a course preview, not a production government service; see [deployment notes](docs/deployment.md) before exposing it publicly. Render requires web services to bind to `0.0.0.0` and the assigned port ([Render web-service documentation](https://render.com/docs/web-services)).
+
+## Project structure
+
+```text
+src/app/             Website server, application service, and static UI
+src/nlp/             Preprocessing, intent, entities, retrieval, and pipeline
+data/processed/      Local catalogue and synthetic query CSV datasets
+src/data_processing/ Dataset building, cleaning, and validation
+src/data_collection/ Public-source collection helpers for manual review
+notebooks/           Data and NLP walkthroughs
+models/nlp/           Model configuration and evaluation metrics
+reports/              Data quality and NLP evaluation references
+tests/                 Automated tests
+```
+
+## Privacy and source quality
+
+Search requests are not saved by the backend. Pattern checks reject some common sensitive identifiers but may not catch every kind of personal information. Avoid entering credentials, OTPs, Aadhaar/PAN numbers, phone numbers, financial details, or private addresses. Browser speech recognition may send audio to the browser provider; review the transcript before searching.
+
+Source data can be incomplete, stale, or unverified. Do not treat a blank catalogue field as proof that a service is unavailable. Confirm current details on the official page before applying or travelling.
+
+## License
+
+This project is released under the MIT License. See [LICENSE](LICENSE).
