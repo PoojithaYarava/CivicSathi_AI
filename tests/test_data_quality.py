@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from src.data_processing.normalization import clean_text, detect_language, find_sensitive_patterns, normalize_url
-from src.data_processing.validation import SCHEMAS, scan_sensitive_text, validate_complaints, validate_queries, validate_source_registry
+from src.data_processing.validation import SCHEMAS, scan_sensitive_text, validate_complaints, validate_dataset_manifest, validate_queries, validate_source_registry
 
 DATA = ROOT / "data" / "processed"
 
@@ -29,6 +29,14 @@ def test_service_ids_and_required_public_fields():
     assert frame["service_name"].str.strip().ne("").all()
     assert frame["department"].str.strip().ne("").all()
     assert frame["source_url"].str.strip().ne("").all()
+
+
+def test_telanganas_district_dataset_is_complete_and_source_linked():
+    frame = load_dataset("telangana_districts.csv")
+    assert len(frame) == 33
+    assert frame["district"].is_unique
+    assert frame["district_portal"].str.contains(r"https?://.*telangana\.gov\.in", regex=True).all()
+    assert frame["state_portal_directory"].eq("https://www.telangana.gov.in/district-web-directory/").all()
 
 
 def test_synthetic_queries_are_unique_annotated_and_valid():
@@ -58,6 +66,12 @@ def test_source_registry_urls_and_verification_values():
     assert set(schemes["source_url"]).issubset(registered_urls)
     assert set(forms["source_url"]).issubset(registered_urls)
     assert set(forms["download_url"]).issubset(registered_urls)
+
+
+def test_dataset_manifest_matches_processed_files_and_record_counts():
+    manifest = pd.read_csv(ROOT / "data" / "dataset_manifest.csv", keep_default_na=False)
+    assert set(manifest["dataset_name"]) == set(SCHEMAS)
+    assert validate_dataset_manifest(manifest, DATA) == []
 
 
 def test_multilingual_normalization_and_privacy_scanner():

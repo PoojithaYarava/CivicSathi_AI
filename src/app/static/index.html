@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f3">
+  <title>CivicSathi | Telangana public services</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink:#18332c; --muted:#65766f; --line:#dce6df; --paper:#fff;
+      --wash:#f4f7f3; --green:#087356; --green-dark:#075942; --mint:#e9f5ee;
+      --gold:#93620c; --gold-bg:#fff8e8; --blue:#315c79;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--wash); font-size:15px; line-height:1.55; }
+    button,select,textarea { font:inherit; }
+    a { color:var(--green-dark); overflow-wrap:anywhere; }
+    .top { background:#fff; border-bottom:1px solid var(--line); }
+    .top-inner,main,footer { width:min(1080px,100%); margin:auto; padding-left:24px; padding-right:24px; }
+    .top-inner { height:68px; display:flex; align-items:center; justify-content:space-between; }
+    .brand { display:flex; align-items:center; gap:10px; font-size:19px; font-weight:780; letter-spacing:-.04em; }
+    .brand-mark { display:grid; place-items:center; width:35px; height:35px; color:white; background:var(--green); border-radius:12px 12px 12px 4px; font-weight:850; }
+    .top-note { display:flex; align-items:center; gap:8px; color:var(--muted); font-size:13px; }
+    .live-dot { width:8px; height:8px; background:#39a879; border-radius:50%; box-shadow:0 0 0 4px #39a87920; }
+    main { padding-top:40px; padding-bottom:54px; }
+    .hero { display:grid; grid-template-columns:minmax(0,1fr) 240px; align-items:end; gap:30px; }
+    .eyebrow { color:var(--green); font-weight:760; font-size:11px; letter-spacing:.13em; text-transform:uppercase; }
+    h1 { margin:8px 0 10px; max-width:700px; font-size:clamp(36px,5vw,54px); line-height:1.04; letter-spacing:-.06em; }
+    .lead { max-width:700px; margin:0; color:var(--muted); font-size:16px; }
+    .hero-note { padding:13px 15px; border:1px solid var(--line); border-radius:13px; background:#ffffffa8; color:var(--muted); font-size:12px; }
+    .hero-note strong { display:block; color:var(--ink); font-size:13px; margin-bottom:3px; }
+    .search-card { margin-top:26px; padding:22px; background:var(--paper); border:1px solid var(--line); border-radius:18px; box-shadow:0 12px 34px #193b2b0c; }
+    .search-head { display:flex; justify-content:space-between; align-items:start; gap:15px; }
+    .search-head h2 { margin:0; font-size:17px; letter-spacing:-.02em; }
+    .count { color:var(--muted); font-size:12px; white-space:nowrap; }
+    .field-label { display:block; margin:15px 0 7px; font-size:13px; font-weight:720; }
+    textarea { display:block; width:100%; min-height:105px; padding:14px 15px; resize:vertical; border:1px solid #cbd9d0; border-radius:12px; outline:none; color:var(--ink); background:#fff; }
+    textarea::placeholder { color:#83928b; }
+    textarea:focus,select:focus,button:focus-visible { outline:3px solid #13845d33; outline-offset:2px; border-color:var(--green); }
+    .controls { display:grid; grid-template-columns:minmax(190px,250px) 1fr auto auto; align-items:end; gap:12px; margin-top:13px; }
+    select { width:100%; height:44px; padding:0 12px; border:1px solid #cbd9d0; border-radius:10px; background:white; color:var(--ink); }
+    .privacy-hint { align-self:center; margin:0; color:var(--muted); font-size:12px; }
+    .primary,.secondary,.icon-button { min-height:43px; padding:10px 15px; border:1px solid transparent; border-radius:10px; cursor:pointer; font-weight:730; }
+    .primary { color:white; background:var(--green); white-space:nowrap; }
+    .primary:hover { background:var(--green-dark); }
+    .primary:disabled { opacity:.65; cursor:wait; }
+    .secondary { color:#365047; background:#f5f8f5; border-color:var(--line); }
+    .secondary:hover { background:var(--mint); }
+    .quick { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:18px; }
+    .app-nav { display:flex; flex-wrap:wrap; gap:7px; margin:22px 0 0; padding:5px; border:1px solid var(--line); border-radius:12px; background:#eaf0eb; width:max-content; max-width:100%; }
+    .nav-button { padding:8px 13px; border:0; border-radius:8px; background:transparent; color:#53665d; font-size:13px; font-weight:720; cursor:pointer; }
+    .nav-button[aria-selected="true"] { color:var(--green-dark); background:#fff; box-shadow:0 1px 4px #123b2414; }
+    .browse-card,.complaint-card { margin-top:15px; padding:20px; border:1px solid var(--line); border-radius:16px; background:#fff; }
+    .browse-controls { display:grid; grid-template-columns:2fr 1fr 1fr 1fr 1fr auto; gap:10px; align-items:end; }
+    .browse-controls input { height:43px; padding:0 12px; border:1px solid #cbd9d0; border-radius:10px; }
+    .browse-controls select { height:43px; }
+    .browse-results { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:16px; }
+    .browse-item,.channel { padding:15px; border:1px solid var(--line); border-radius:12px; background:#fcfdfb; }
+    .browse-item h3,.channel h3 { margin:3px 0 6px; font-size:15px; }
+    .browse-item p,.channel p { margin:5px 0; color:var(--muted); font-size:13px; }
+    .view-title { margin:0 0 5px; font-size:20px; letter-spacing:-.03em; }
+    .view-lead { margin:0 0 17px; color:var(--muted); font-size:13px; }
+    .complaint-prep { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:13px 0; padding:0; list-style:none; }
+    .complaint-prep li { padding:10px 12px; border:1px solid var(--line); border-radius:10px; background:#fafcf9; font-size:12px; }
+    .category-tags { display:flex; flex-wrap:wrap; gap:7px; margin:10px 0 16px; }
+    .category-tag { padding:5px 9px; border:1px solid var(--line); border-radius:999px; color:#465c52; background:#f8faf8; font-size:11px; }
+    .disclaimer-box { margin-top:14px; padding:12px 14px; border-radius:10px; background:#fff7e4; color:#735217; font-size:12px; }
+    .voice-row { display:flex; align-items:center; gap:9px; margin-top:10px; }
+    .voice-note { color:var(--muted); font-size:11px; }
+    .field-grid { display:grid; grid-template-columns:1fr 2fr; gap:10px; margin:14px 0; }
+    .field-grid input,.field-grid textarea,.task-form input,.task-form select { width:100%; padding:10px 11px; border:1px solid #cbd9d0; border-radius:9px; color:var(--ink); background:white; }
+    .field-grid textarea { min-height:82px; }
+    .draft-card,.task-card { padding:15px; margin-top:10px; border:1px solid var(--line); border-radius:12px; background:#fff; }
+    .task-layout { display:grid; grid-template-columns:minmax(250px,1fr) 2fr; gap:16px; margin-top:15px; }
+    .task-form { display:grid; gap:9px; align-content:start; padding:15px; border:1px solid var(--line); border-radius:12px; background:#fafcf9; }
+    .task-form label { margin:0; font-size:12px; }
+    .task-card { margin:0; }
+    .task-head { display:flex; justify-content:space-between; gap:12px; align-items:start; }
+    .task-head h3 { margin:0; font-size:15px; }
+    .task-card p { margin:6px 0; color:var(--muted); font-size:12px; }
+    .task-actions { display:flex; flex-wrap:wrap; gap:7px; margin-top:10px; }
+    .source-status { padding:3px 7px; border-radius:999px; background:#eff4f0; color:#4e6258; font-size:10px; }
+    .about-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:14px; }
+    .about-item { padding:14px; border:1px solid var(--line); border-radius:12px; background:#fafcf9; }
+    .about-item h3 { margin:0 0 5px; font-size:14px; }
+    .about-item p { margin:0; color:var(--muted); font-size:12px; }
+    .detail-button { margin-top:8px; padding:6px 9px; border:1px solid var(--line); border-radius:8px; color:var(--green-dark); background:white; font-size:11px; font-weight:700; cursor:pointer; }
+    .quick-label { width:100%; color:var(--muted); font-size:11px; font-weight:750; letter-spacing:.07em; text-transform:uppercase; }
+    .chip { padding:7px 11px; border:1px solid var(--line); border-radius:999px; color:#345349; background:#f8faf8; font-size:12px; cursor:pointer; }
+    .chip:hover { border-color:#9bbda9; background:var(--mint); }
+    .how { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:15px; }
+    .how-step { display:flex; align-items:center; gap:10px; padding:12px 13px; border:1px solid #e7ece8; border-radius:12px; background:#fafcf9; color:var(--muted); font-size:12px; }
+    .step-no { display:grid; place-items:center; flex:none; width:25px; height:25px; border-radius:50%; background:var(--mint); color:var(--green-dark); font-size:12px; font-weight:800; }
+    #status { min-height:22px; margin-top:11px; color:var(--muted); font-size:13px; }
+    #output { margin-top:21px; }
+    .answer-card,.documents-card,.result,.warnings,.empty { border-radius:15px; }
+    .answer-card { padding:20px 22px; border:1px solid #bad8c7; background:#f3faf5; }
+    .section-kicker { margin:0 0 8px; color:var(--green-dark); font-size:11px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    .answer-text { margin:0; font-size:17px; line-height:1.62; }
+    .meta { display:flex; flex-wrap:wrap; gap:7px; margin-top:14px; }
+    .badge { padding:4px 9px; border:1px solid var(--line); border-radius:999px; color:#50645a; background:white; font-size:11px; }
+    .documents-card { margin-top:15px; padding:19px; border:1px solid #e3d5aa; background:var(--gold-bg); }
+    .panel-head { display:flex; justify-content:space-between; align-items:center; gap:15px; }
+    .panel-head h2,.results-head { margin:0; font-size:17px; letter-spacing:-.02em; }
+    .actions { display:flex; gap:8px; }
+    .action-button { min-height:35px; padding:7px 10px; border:1px solid #e5dcc2; border-radius:9px; background:white; color:#5d4b20; font-size:12px; font-weight:700; cursor:pointer; }
+    .action-button:hover { background:#fff9e9; border-color:#cbb77d; }
+    .document-intro { margin:6px 0 10px; color:#6b624e; font-size:12px; }
+    .document-scenario { margin-top:11px; padding:15px; border:1px solid #e9e1cc; border-radius:12px; background:white; }
+    .scenario-top { display:flex; justify-content:space-between; align-items:start; gap:12px; }
+    .result-type { color:var(--green); font-size:10px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    .document-scenario h3 { margin:3px 0 3px; font-size:16px; }
+    .scenario-scope { margin:0; color:var(--muted); font-size:12px; }
+    .progress { flex:none; padding:5px 8px; border-radius:999px; background:#f1f5f2; color:#50645a; font-size:11px; font-weight:700; }
+    .document-list { display:grid; gap:0; margin:11px 0 0; padding:0; list-style:none; }
+    .document-list li { display:grid; grid-template-columns:19px minmax(0,1fr); gap:8px; padding:9px 0; border-top:1px solid #f0eee6; }
+    .document-list input { width:16px; height:16px; margin:3px 0 0; accent-color:var(--green); cursor:pointer; }
+    .item-copy { color:#293e36; font-size:13px; }
+    .item-label { display:inline-block; margin-right:6px; padding:2px 6px; border-radius:99px; background:#edf4ee; color:#315943; font-size:9px; font-weight:800; letter-spacing:.045em; text-transform:uppercase; vertical-align:2px; }
+    .item-condition { display:block; margin-top:3px; color:var(--muted); font-size:11px; }
+    .document-list li.is-checked .item-copy { color:#7c8982; text-decoration:line-through; }
+    .result-block { margin-top:25px; }
+    .results-head { margin-bottom:10px; }
+    .result { margin-top:9px; padding:16px 18px; border:1px solid var(--line); background:white; }
+    .result-top { display:flex; justify-content:space-between; align-items:start; gap:15px; }
+    .result h3 { margin:2px 0 4px; font-size:16px; }
+    .result p { margin:7px 0; color:#596a62; font-size:13px; }
+    .score { padding:4px 7px; border-radius:7px; color:#4e6258; background:#eff4f0; font-size:10px; white-space:nowrap; }
+    .links { display:flex; flex-wrap:wrap; gap:14px; margin-top:10px; font-size:12px; font-weight:680; }
+    .warnings { margin-top:16px; padding:13px 15px; color:var(--gold); background:#fff3d8; font-size:12px; }
+    .warnings ul { margin:5px 0 0; padding-left:18px; }
+    .empty { padding:18px; border:1px dashed var(--line); color:var(--muted); background:#fff; }
+    footer { border-top:1px solid var(--line); padding-top:20px; padding-bottom:28px; color:var(--muted); font-size:11px; }
+    footer p { max-width:850px; margin:5px 0; }
+    .footer-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:10px; }
+    @media(max-width:760px) {
+      .hero { grid-template-columns:1fr; gap:15px; }
+      .hero-note { max-width:440px; }
+      .controls { grid-template-columns:1fr 1fr; }
+      .privacy-hint { grid-column:1/-1; grid-row:2; }
+      .how { grid-template-columns:1fr; gap:7px; }
+      .browse-controls { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:520px) {
+      .top-inner,main,footer { padding-left:16px; padding-right:16px; }
+      main { padding-top:29px; }
+      .top-inner { height:60px; }
+      .top-note { font-size:11px; }
+      .search-card { padding:16px; }
+      .controls { grid-template-columns:1fr; }
+      .privacy-hint { grid-column:auto; grid-row:auto; }
+      .primary,.secondary { width:100%; }
+      .panel-head { align-items:start; flex-direction:column; }
+      .actions { width:100%; }
+      .action-button { flex:1; }
+      .documents-card { padding:15px; }
+      .scenario-top { flex-direction:column; }
+      .app-nav { width:100%; }
+      .nav-button { flex:1 1 auto; padding:8px 5px; font-size:11px; }
+      .browse-controls,.browse-results,.complaint-prep,.task-layout,.field-grid { grid-template-columns:1fr; }
+    }
+    @media print {
+      body { background:white; color:#111; font-size:12pt; }
+      .top,.hero,.search-card,footer,.result-block,#status,.warnings { display:none !important; }
+      main { width:100%; padding:0; }
+      #output { margin:0; }
+      .answer-card { display:none; }
+      .documents-card { margin:0; border:0; padding:0; background:white; }
+      .panel-head .actions,.document-intro { display:none; }
+      .document-scenario { break-inside:avoid; border:1px solid #bbb; }
+      .document-list input { display:none; }
+      .document-list li { grid-template-columns:1fr; }
+      .links a { color:#111; }
+      .app-nav,#catalogue-view,#complaint-view,#tasks-view,#sources-view { display:none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">C</span><span>CivicSathi</span></div>
+      <div class="top-note"><span class="live-dot" aria-hidden="true"></span>No query history saved</div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <div class="eyebrow">Public services · All 33 Telangana districts</div>
+        <h1 id="page-title">Government services, made easier to understand.</h1>
+        <p class="lead">ప్రభుత్వ సేవలను సులభంగా అర్థం చేసుకోండి.<br>Discover public services, prepare documents, understand schemes, and reach official portals in English or Telugu. Telugu-English queries are also supported; official record wording stays in its published language.</p>
+      </div>
+      <aside class="hero-note"><strong>Independent information tool</strong>CivicSathi helps you find official records. It does not submit applications or complaints.</aside>
+    </section>
+
+    <nav class="app-nav" role="tablist" aria-label="CivicSathi sections">
+      <button class="nav-button" type="button" role="tab" aria-selected="true" tabindex="0" data-view="ask" aria-controls="search-card">Ask</button>
+      <button class="nav-button" type="button" role="tab" aria-selected="false" tabindex="-1" data-view="services" aria-controls="catalogue-view">Services</button>
+      <button class="nav-button" type="button" role="tab" aria-selected="false" tabindex="-1" data-view="schemes" aria-controls="catalogue-view">Schemes</button>
+      <button class="nav-button" type="button" role="tab" aria-selected="false" tabindex="-1" data-view="documents" aria-controls="catalogue-view">Forms</button>
+      <button class="nav-button" type="button" role="tab" aria-selected="false" tabindex="-1" data-view="complaints" aria-controls="complaint-view">Complaints</button>
+      <button class="nav-button" type="button" role="tab" aria-selected="false" tabindex="-1" data-view="tasks" aria-controls="tasks-view">My tasks</button>
+      <button class="nav-button" type="button" role="tab" aria-selected="false" tabindex="-1" data-view="sources" aria-controls="sources-view">Sources</button>
+      <button class="nav-button" type="button" role="tab" aria-selected="false" tabindex="-1" data-view="districts" aria-controls="districts-view">Districts</button>
+      <button class="nav-button" type="button" role="tab" aria-selected="false" tabindex="-1" data-view="about" aria-controls="about-view">About</button>
+    </nav>
+
+    <section class="search-card" id="search-card" aria-label="Search government information">
+      <form id="query-form">
+        <div class="search-head"><h2>What are you looking for?</h2><span class="count" id="query-count">0 / 2000</span></div>
+        <label class="field-label" for="query">Describe the service or documents you need</label>
+        <textarea id="query" name="query" maxlength="2000" placeholder="Example: What documents should I take for a residence certificate?" required></textarea>
+        <div class="controls">
+          <div>
+            <label class="field-label" for="district" style="margin-top:0">District (optional)</label>
+            <select id="district" name="district">
+              <option value="">Choose a district</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="response-language" style="margin-top:0">Response guidance</label>
+            <select id="response-language"><option value="bilingual">English + తెలుగు</option><option value="english">English</option><option value="telugu">తెలుగు సహాయం</option></select>
+          </div>
+          <div>
+            <label class="field-label" for="language" style="margin-top:0">Language you will speak</label>
+            <select id="language"><option value="te-IN-mixed">తెలుగు + English</option><option value="te-IN">తెలుగు</option><option value="en-IN">English</option></select>
+          </div>
+          <p class="privacy-hint">Avoid Aadhaar numbers, phone numbers, application IDs, OTPs, or other private details.</p>
+          <button class="secondary" id="voice" type="button" aria-label="Start voice transcription">🎙 Speak</button>
+          <button class="secondary" id="clear" type="button">Clear</button>
+          <button class="primary" id="submit" type="submit">Search services <span aria-hidden="true">→</span></button>
+        </div>
+      </form>
+      <p class="voice-note" id="voice-note">Choose Telugu + English for natural mixed speech, tap Speak, and review the transcript before searching. Mixed-language recognition can miss words. Voice recognition uses your browser and may send audio to its speech service.</p>
+      <div class="quick" aria-label="Example searches">
+        <span class="quick-label">Try a search</span>
+        <button class="chip" type="button" data-query="documents required for birth certificate">Birth certificate documents</button>
+        <button class="chip" type="button" data-query="documents required for residence certificate">Residence certificate documents</button>
+        <button class="chip" type="button" data-query="documents required for caste certificate">Caste certificate documents</button>
+        <button class="chip" type="button" data-query="How do I apply for an income certificate?">Income certificate application</button>
+        <button class="chip" type="button" data-query="T-Fiber scheme eligibility">T-Fiber scheme</button>
+      </div>
+      <div class="how" aria-label="How CivicSathi works">
+        <div class="how-step"><span class="step-no">1</span><span>Describe a service in your own words</span></div>
+        <div class="how-step"><span class="step-no">2</span><span>Review case-specific documents and conditions</span></div>
+        <div class="how-step"><span class="step-no">3</span><span>Confirm details with the official source</span></div>
+      </div>
+      <div id="status" role="status" aria-live="polite"></div>
+    </section>
+    <section id="output" aria-live="polite"></section>
+
+    <section id="catalogue-view" class="browse-card" aria-label="Browse service catalogues" hidden>
+      <h2 class="view-title">Browse the local catalogue</h2>
+      <p class="view-lead">Search service, scheme, and form records. Empty fields are not treated as proof that a service is unavailable.</p>
+      <div class="browse-controls">
+        <div><label class="field-label" for="browse-query" style="margin-top:0">Search records</label><input id="browse-query" type="search" placeholder="Try birth certificate" /></div>
+      <div><label class="field-label" for="browse-type" style="margin-top:0">Record type</label><select id="browse-type"><option value="services">Services</option><option value="schemes">Schemes</option><option value="documents">Forms and documents</option></select></div>
+        <div><label class="field-label" for="browse-department" style="margin-top:0">Department</label><input id="browse-department" type="search" placeholder="Optional" /></div>
+        <div><label class="field-label" for="browse-category" style="margin-top:0">Category</label><input id="browse-category" type="search" placeholder="Optional" /></div>
+        <div><label class="field-label" for="browse-district" style="margin-top:0">District scope</label><select id="browse-district"><option value="">Any / not specified</option></select></div>
+        <button class="primary" id="browse-submit" type="button">Browse</button>
+      </div>
+      <div id="browse-status" class="hint" role="status" aria-live="polite" style="margin-top:10px"></div>
+      <div id="browse-results" class="browse-results"></div>
+    </section>
+
+    <section id="complaint-view" class="complaint-card" aria-label="Complaint guidance" hidden>
+      <h2 class="view-title">Prepare before contacting an official channel</h2>
+      <p class="view-lead">CivicSathi can help you plan what to say. It does not accept or submit a complaint.</p>
+      <div id="complaint-content"><p class="hint">Loading source-backed complaint channels…</p></div>
+    </section>
+
+    <section id="tasks-view" class="browse-card" aria-label="My preparation tasks" hidden>
+      <h2 class="view-title">My preparation tasks</h2>
+      <p class="view-lead">Personal tasks are saved in this browser only. This is not live government application or complaint tracking. Anyone with access to this browser profile may see these tasks.</p>
+      <div class="task-layout">
+        <form id="task-form" class="task-form">
+          <label for="task-title">Task title</label><input id="task-title" maxlength="120" required placeholder="Prepare for a service" />
+          <label for="task-type">Task type</label><select id="task-type"><option>Service preparation</option><option>Scheme research</option><option>Complaint preparation</option><option>Document checklist</option></select>
+          <label for="task-status">Status</label><select id="task-status"><option>Not Started</option><option>In Progress</option><option>Ready for Official Portal</option><option>Completed by User</option><option>On Hold</option></select>
+          <button class="primary" type="submit">Save task on this device</button>
+          <button class="secondary" id="clear-tasks" type="button">Delete all tasks</button>
+        </form>
+        <div><div class="quick-label">Saved tasks · <span id="task-count">0</span></div><div class="meta" id="task-stats"></div>
+          <div class="browse-controls" style="margin:12px 0"><input id="task-search" type="search" aria-label="Search saved tasks" placeholder="Search tasks" /><select id="task-filter" aria-label="Filter tasks"><option value="">All statuses</option><option>Not Started</option><option>In Progress</option><option>Ready for Official Portal</option><option>Completed by User</option><option>On Hold</option></select></div>
+          <div id="task-list" class="browse-results"></div></div>
+      </div>
+    </section>
+
+    <section id="sources-view" class="browse-card" aria-label="Official source directory" hidden>
+      <h2 class="view-title">Official source directory</h2>
+      <p class="view-lead">A project review date indicates when CivicSathi checked the record; it does not guarantee that a destination or policy is current.</p>
+      <div id="sources-status" class="hint" role="status"></div><div id="sources-list" class="browse-results"></div>
+    </section>
+    <section id="districts-view" class="browse-card" aria-label="Telangana district directory" hidden>
+      <h2 class="view-title">Telangana district directory</h2>
+      <p class="view-lead">District directory from the Government of Telangana portal. This provides geographic navigation; it does not mean CivicSathi has verified every service checklist in every district.</p>
+      <p id="districts-status" class="hint" role="status" aria-live="polite"></p><div id="districts-list" class="browse-results"></div>
+    </section>
+    <section id="about-view" class="browse-card" aria-label="About CivicSathi and privacy" hidden>
+      <h2 class="view-title">About CivicSathi</h2>
+      <p class="view-lead">An independent local information assistant for Telangana public services. It is not affiliated with or operated by a government department.</p>
+      <div class="about-grid">
+        <article class="about-item"><h3>Grounded information</h3><p>Search uses local catalogue data. Requirements appear only when a reviewed source checklist is available; confirm current details with the official source.</p></article>
+        <article class="about-item"><h3>Actions stay yours</h3><p>CivicSathi does not submit applications, complaints, payments, or status requests. It prepares information and opens official destinations for you.</p></article>
+        <article class="about-item"><h3>Privacy</h3><p>Server requests are processed in memory. Tasks are saved only in this browser after you choose to save them. Do not add sensitive identity or credential details.</p></article>
+        <article class="about-item"><h3>Voice limits</h3><p>Optional speech recognition is supplied by the browser and may process audio externally. Telugu-English recognition has not been evaluated. Text input always remains available.</p></article>
+      </div>
+      <p class="hint" style="margin-top:14px">See the repository privacy and governance documentation for data sources, retention, and project limits.</p>
+    </section>
+  </main>
+  <footer>
+    <p><strong>Check the linked government source before travelling.</strong> Requirements may vary by service, district, and situation. CivicSathi only shows checklists supported by its source records.</p>
+    <p>Your search is processed in memory by the local app and is not stored. Never enter credentials, OTPs, financial details, or private personal information.</p>
+    <div class="footer-links"><span>Runs on this device</span><span>·</span><span>No application submission</span><span>·</span><span>Official-source links in results</span></div>
+  </footer>
+  <script>
+    const form = document.getElementById('query-form');
+    const input = document.getElementById('query');
+    const district = document.getElementById('district');
+    const button = document.getElementById('submit');
+    const clearButton = document.getElementById('clear');
+    const status = document.getElementById('status');
+    const output = document.getElementById('output');
+    const queryCount = document.getElementById('query-count');
+    const searchCard = document.getElementById('search-card');
+    const catalogueView = document.getElementById('catalogue-view');
+    const complaintView = document.getElementById('complaint-view');
+    const tasksView = document.getElementById('tasks-view');
+    const sourcesView = document.getElementById('sources-view');
+    const aboutView = document.getElementById('about-view');
+    const districtsView = document.getElementById('districts-view');
+    const districtsList = document.getElementById('districts-list');
+    const districtsStatus = document.getElementById('districts-status');
+    const browseQuery = document.getElementById('browse-query');
+    const browseType = document.getElementById('browse-type');
+    const browseDepartment = document.getElementById('browse-department');
+    const browseCategory = document.getElementById('browse-category');
+    const browseDistrict = document.getElementById('browse-district');
+    const browseStatus = document.getElementById('browse-status');
+    const browseResults = document.getElementById('browse-results');
+    const complaintContent = document.getElementById('complaint-content');
+    const taskList = document.getElementById('task-list');
+    const taskCount = document.getElementById('task-count');
+    const taskStats = document.getElementById('task-stats');
+    const sourcesList = document.getElementById('sources-list');
+    const sourcesStatus = document.getElementById('sources-status');
+    const languageSelect = document.getElementById('language');
+    const responseLanguage = document.getElementById('response-language');
+    let complaintGuidance = null;
+    let activeServiceId = '';
+    let speechRecognition = null;
+    const TASK_KEY = 'civicsathi.personalTasks.v1';
+
+    function node(tag, className, text) {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      if (text !== undefined) el.textContent = text;
+      return el;
+    }
+    function safeLink(parent, label, value) {
+      if (!value) return;
+      try {
+        const url = new URL(value);
+        if (url.protocol !== 'https:') return;
+        const link = node('a', '', label);
+        link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer';
+        parent.append(link);
+      } catch (_) { /* Invalid source URLs are not shown as links. */ }
+    }
+    function setView(view) {
+      document.querySelectorAll('[data-view]').forEach(tab => {const selected=tab.dataset.view===view;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;});
+      const ask = view === 'ask';
+      searchCard.hidden = !ask; output.hidden = !ask;
+      const browse = ['services','schemes','documents'].includes(view);
+      catalogueView.hidden = !browse; complaintView.hidden = view !== 'complaints';
+      tasksView.hidden = view !== 'tasks'; sourcesView.hidden = view !== 'sources'; aboutView.hidden = view !== 'about'; districtsView.hidden = view !== 'districts';
+      if (browse) {
+        browseType.value = ({services:'services',schemes:'schemes',documents:'documents'})[view];
+        document.querySelector('#catalogue-view .view-title').textContent = ({services:'Explore public services',schemes:'Explore government schemes',documents:'Find forms and documents'})[view];
+        loadCatalogue();
+      }
+      if (view === 'complaints' && !complaintContent.dataset.loaded) loadComplaints();
+      if (view === 'tasks') renderTasks();
+      if (view === 'sources') loadSources();
+      if (view === 'districts') loadDistricts();
+    }
+    async function loadDistrictOptions() {
+      try {
+        const response = await fetch('/api/districts'); const data = await response.json();
+        if (!response.ok) throw new Error('District list unavailable.');
+        for (const select of [district, browseDistrict]) {
+          const first = select.options[0]; select.replaceChildren(first);
+          data.items.forEach(row => { const option = document.createElement('option'); option.value = row.district; option.textContent = row.district; select.append(option); });
+        }
+      } catch (_) { /* District browse tab displays the service error when opened. */ }
+    }
+    async function loadDistricts() {
+      districtsStatus.textContent = 'Loading the official district directory…'; districtsList.replaceChildren();
+      try {
+        const response = await fetch('/api/districts'); const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Could not load district directory.');
+        districtsStatus.textContent = `${data.count} districts listed. ${data.scope_note}`;
+        data.items.forEach(row => {
+          const card = node('article','browse-item'); card.append(node('h3','',row.district),node('p','','Government of Telangana district portal'));
+          const links = node('div','links'); safeLink(links,'Open district portal ↗',row.district_portal); safeLink(links,'State district directory ↗',row.state_portal_directory); card.append(links); districtsList.append(card);
+        });
+      } catch (error) { districtsStatus.textContent = error.message || 'Could not load district directory.'; }
+    }
+    async function loadCatalogue() {
+      browseStatus.textContent = 'Loading local records…';
+      browseResults.replaceChildren();
+      const path = `/api/${encodeURIComponent(browseType.value)}`;
+      const params = new URLSearchParams();
+      if (browseQuery.value.trim()) params.set('q', browseQuery.value.trim());
+      if (browseDepartment.value.trim()) params.set('department', browseDepartment.value.trim());
+      if (browseCategory.value.trim()) params.set('category', browseCategory.value.trim());
+      if (browseDistrict.value) params.set('district', browseDistrict.value);
+      try {
+        const response = await fetch(`${path}?${params}`);
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Could not load catalogue records.');
+        browseStatus.textContent = `${data.count} record${data.count === 1 ? '' : 's'} in this view.`;
+        if (!data.items.length) { browseResults.append(node('div', 'empty', 'No records match these filters.')); return; }
+        data.items.forEach(item => {
+          const card = node('article', 'browse-item');
+          card.append(node('div', 'result-type', item.record_type || 'Record'));
+          card.append(node('h3', '', item.title || 'Untitled record'));
+          if (item.department) card.append(node('p', '', `Department: ${item.department}`));
+          if (item.category) card.append(node('p', '', `Category: ${item.category}`));
+          if (item.district || item.state) card.append(node('p', '', `Location as listed: ${item.district || item.state}`));
+          if (item.description) card.append(node('p', '', item.description));
+          if (item.eligibility) card.append(node('p', '', `Eligibility as listed: ${item.eligibility}`));
+          if (item.required_documents) card.append(node('p', '', `Documents as listed: ${item.required_documents}`));
+          if (item.purpose) card.append(node('p', '', `Purpose: ${item.purpose}`));
+          const links = node('div', 'links');
+          safeLink(links, 'Visit official destination ↗', item.official_url);
+          safeLink(links, 'Source page ↗', item.source_url);
+          if (links.childNodes.length) card.append(links);
+          if (item.warnings?.length) card.append(node('p', 'warnings', item.warnings.join(' ')));
+          if (item.record_type && item.record_id) {
+            const detailButton=node('button','detail-button','View available details'); detailButton.type='button';
+            detailButton.addEventListener('click',()=>showRecordDetails(card,item)); card.append(detailButton);
+          }
+          if (item.record_type === 'Service' || item.record_type === 'Scheme') {
+            const taskButton = node('button','detail-button','Save preparation task'); taskButton.type='button';
+            taskButton.addEventListener('click', () => addTask({title:`Prepare for ${item.title}`,type:item.record_type === 'Scheme' ? 'Scheme research' : 'Service preparation',record_id:item.record_id,source_url:item.source_url || item.official_url || ''}));
+            card.append(taskButton);
+          }
+          browseResults.append(card);
+        });
+      } catch (error) { browseStatus.textContent = error.message || 'Could not reach the local catalogue.'; }
+    }
+    async function showRecordDetails(card,item) {
+      const existing=card.querySelector('.record-details'); if(existing){existing.remove();return;}
+      const detail=node('div','record-details hint','Loading recorded details…'); card.append(detail);
+      const route=item.record_type==='Service'?'services':item.record_type==='Scheme'?'schemes':'documents';
+      try {const response=await fetch(`/api/${route}/${encodeURIComponent(item.record_id)}`);const data=await response.json();if(!response.ok)throw new Error(data.error||'Details unavailable.');detail.replaceChildren();
+        const fields=[['Description',data.description],['Eligibility',data.eligibility],['Documents',data.required_documents],['Purpose',data.purpose],['Category',data.category],['Department',data.department],['Location',data.district||data.state],['Last checked',data.last_verified]];
+        let populated=0;fields.forEach(([label,value])=>{if(value){detail.append(node('p','',`${label}: ${value}`));populated++;}});
+        if(!populated)detail.append(node('p','','The available record does not include further reviewed details.'));
+        if(!data.official_url)detail.append(node('p','','No direct official application URL is recorded for this item.'));
+      } catch(error){detail.textContent=error.message||'Details unavailable.';}
+    }
+    async function loadComplaints() {
+      try {
+        const response = await fetch('/api/complaints');
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Could not load complaint guidance.');
+        complaintGuidance = data;
+        complaintContent.replaceChildren();
+        const note = node('div', 'disclaimer-box', data.category_note || 'Official channels may use different categories.');
+        complaintContent.append(note);
+        const tags = node('div', 'category-tags');
+        (data.issue_categories || []).forEach(category => tags.append(node('span', 'category-tag', category)));
+        complaintContent.append(tags);
+        complaintContent.append(node('h3', '', 'Details to prepare'));
+        const list = node('ul', 'complaint-prep');
+        (data.preparation || []).forEach(item => list.append(node('li', '', item)));
+        complaintContent.append(list);
+        const channels = node('div', 'browse-results');
+        (data.channels || []).forEach(channel => {
+          const card = node('article', 'channel');
+          card.append(node('h3', '', channel.name));
+          card.append(node('p', '', channel.applies_to));
+          card.append(node('p', '', channel.action));
+          const links = node('div', 'links');
+          safeLink(links, 'Open official channel ↗', channel.url);
+          safeLink(links, 'About this process ↗', channel.source_url);
+          card.append(links); channels.append(card);
+        });
+        complaintContent.append(channels);
+        const formSource = node('div', 'links');
+        safeLink(formSource, `GHMC general grievance form: ${data.form_source?.title || 'official form'} ↗`, data.form_source?.url);
+        complaintContent.append(formSource);
+        complaintContent.append(node('div', 'disclaimer-box', data.status_note || data.disclaimer));
+        const draftForm = document.createElement('form'); draftForm.id='complaint-draft-form';
+        draftForm.innerHTML = '<h3>Prepare an editable draft</h3><p class="hint">Enter only the issue description. Do not include names, contact details, exact home addresses, account numbers, or IDs.</p><label class="field-label" for="complaint-description">Issue description</label><textarea id="complaint-description" maxlength="2000" required placeholder="Example: Garbage has not been collected from our street for several days"></textarea><button class="primary" type="submit">Prepare draft</button><div id="complaint-draft-result" aria-live="polite"></div>';
+        draftForm.addEventListener('submit', prepareComplaintDraft);
+        complaintContent.append(draftForm);
+        complaintContent.dataset.loaded = 'true';
+      } catch (error) { complaintContent.replaceChildren(node('div', 'warnings', error.message || 'Could not load complaint guidance.')); }
+    }
+    async function prepareComplaintDraft(event) {
+      event.preventDefault();
+      const description=document.getElementById('complaint-description').value.trim();
+      const target=document.getElementById('complaint-draft-result'); target.replaceChildren(node('p','hint','Preparing locally…'));
+      try {
+        const response=await fetch('/api/complaints/draft',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({description})});
+        const data=await response.json(); if(!response.ok) throw new Error(data.error || 'Could not prepare draft.');
+        target.replaceChildren();
+        const card=node('article','draft-card'); card.append(node('div','disclaimer-box','Review and edit this draft. It has not been sent to a government service.'));
+        const fields=node('div','field-grid');
+        function field(label,id,value,multiline=false) { const wrap=document.createElement('div'); const lab=node('label','field-label',label); lab.htmlFor=id; const inputEl=multiline?document.createElement('textarea'):document.createElement('input'); inputEl.id=id; inputEl.value=value||''; inputEl.maxLength=2000; wrap.append(lab,inputEl); fields.append(wrap); return inputEl; }
+        const title=field('Draft title','draft-title',data.complaint_title);
+        const category=field('Suggested category (editable)','draft-category',data.category || 'Needs review');
+        const descriptionField=field('Description (editable)','draft-description',data.description,true);
+        const location=field('Location or area (avoid exact private addresses)','draft-location',data.location || '');
+        card.append(fields);
+        if(data.missing_information?.length) { card.append(node('h4','','Consider checking')); const ul=document.createElement('ul'); data.missing_information.forEach(x=>ul.append(node('li','',x))); card.append(ul); }
+        card.append(node('p','hint',data.suggested_next_action));
+        const channelList=node('div','browse-results');
+        (data.official_channels||[]).forEach(channel=>{const box=node('div','channel');box.append(node('h3','',channel.name),node('p','',channel.applies_to));const links=node('div','links');safeLink(links,'Continue to official complaint portal ↗',channel.url);safeLink(links,'Source ↗',channel.source_url);box.append(links);channelList.append(box);});
+        card.append(channelList);
+        const actions=node('div','task-actions');
+        const copy=node('button','action-button','Copy draft'); copy.type='button'; copy.addEventListener('click',async()=>{const text=`${title.value}\nCategory: ${category.value}\nLocation/area: ${location.value||'Not provided'}\n\n${descriptionField.value}\n\nNot submitted by CivicSathi.`; try{await navigator.clipboard.writeText(text);status.textContent='Draft copied to clipboard.';}catch(_){status.textContent='Clipboard is unavailable in this browser.';}});
+        const save=node('button','action-button','Save as personal task'); save.type='button'; save.addEventListener('click',()=>addTask({title:title.value,type:'Complaint preparation',notes:`Category: ${category.value}\nLocation/area: ${location.value}\n${descriptionField.value}`}));
+        actions.append(copy,save);card.append(actions);target.append(card);
+      } catch(error) {target.replaceChildren(node('div','warnings',error.message || 'Could not prepare draft.'));}
+    }
+    function readTasks() { try { const value=JSON.parse(localStorage.getItem(TASK_KEY)||'[]'); return Array.isArray(value)?value:[]; } catch(_) { return []; } }
+    function writeTasks(items) { try { localStorage.setItem(TASK_KEY,JSON.stringify(items)); return true; } catch(_) { status.textContent='Browser storage is unavailable. Task was not saved.'; return false; } }
+    function addTask(task) {
+      const items=readTasks(); const value={id:crypto.randomUUID?crypto.randomUUID():`${Date.now()}-${Math.random()}`,title:String(task.title||'Preparation task').slice(0,120),type:task.type||'Service preparation',status:'Not Started',notes:String(task.notes||'').slice(0,2000),source_url:task.source_url||'',record_id:task.record_id||'',created_at:new Date().toISOString()};
+      if(writeTasks([value,...items])) { status.textContent='Saved only in this browser. This does not track an official application.'; renderTasks(); }
+    }
+    function renderTasks() {
+      const items=readTasks().sort((a,b)=>String(b.created_at).localeCompare(String(a.created_at))); taskCount.textContent=String(items.length); taskList.replaceChildren(); taskStats.replaceChildren();
+      const statuses=['Not Started','In Progress','Ready for Official Portal','Completed by User','On Hold'];
+      statuses.forEach(value=>taskStats.append(node('span','badge',`${value}: ${items.filter(x=>x.status===value).length}`)));
+      if(!items.length) {taskList.append(node('div','empty','No saved tasks yet. Save a service from Browse or create one here.'));return;}
+      const query=document.getElementById('task-search').value.trim().toLocaleLowerCase();const selectedStatus=document.getElementById('task-filter').value;
+      const filtered=items.filter(task=>(!selectedStatus||task.status===selectedStatus)&&(!query||`${task.title} ${task.type} ${task.notes}`.toLocaleLowerCase().includes(query)));
+      if(!filtered.length){taskList.append(node('div','empty','No tasks match these filters.'));return;}
+      filtered.forEach(task=>{const card=node('article','task-card');const head=node('div','task-head');head.append(node('h3','',task.title));head.append(node('span','source-status',task.status));card.append(head,node('p','',`${task.type} · Added ${new Date(task.created_at).toLocaleDateString()}`));if(task.notes)card.append(node('p','',task.notes));
+        if(task.source_url){const links=node('div','links');safeLink(links,'Open saved source ↗',task.source_url);card.append(links);}
+        const actions=node('div','task-actions');const statusSelect=document.createElement('select');statuses.forEach(value=>{const option=document.createElement('option');option.value=value;option.textContent=value;statusSelect.append(option);});statusSelect.value=task.status;statusSelect.setAttribute('aria-label',`Status for ${task.title}`);statusSelect.addEventListener('change',()=>{const all=readTasks();const found=all.find(x=>x.id===task.id);if(found){found.status=statusSelect.value;writeTasks(all);renderTasks();}});const edit=node('button','action-button','Edit');edit.type='button';edit.addEventListener('click',()=>{const title=window.prompt('Edit task title',task.title);if(title===null)return;const notes=window.prompt('Edit task notes (avoid sensitive information)',task.notes||'');const all=readTasks();const found=all.find(x=>x.id===task.id);if(found){found.title=title.slice(0,120);found.notes=(notes||'').slice(0,2000);writeTasks(all);renderTasks();}});const del=node('button','action-button','Delete');del.type='button';del.addEventListener('click',()=>{writeTasks(readTasks().filter(x=>x.id!==task.id));renderTasks();});actions.append(statusSelect,edit,del);card.append(actions);taskList.append(card);});
+    }
+    async function loadSources() {
+      sourcesList.replaceChildren(); sourcesStatus.textContent='Loading source registry…';
+      try {const response=await fetch('/api/sources');const data=await response.json();if(!response.ok)throw new Error(data.error||'Could not load sources.');sourcesStatus.textContent=`${data.count} recorded source entries.`;
+        data.items.forEach(source=>{const card=node('article','browse-item');card.append(node('div','result-type',source.source_type||'Source'),node('h3','',source.service||source.organization||source.source_id));card.append(node('p','',`Department: ${source.department||'Not specified'} · Location: ${source.district||source.state||'Not specified'}`));const badge=node('span','source-status',String(source.verification_status_display||'not_yet_verified').replaceAll('_',' '));card.append(badge);if(source.description)card.append(node('p','',source.description));card.append(node('p','hint',`Last checked: ${source.last_verified||'Not recorded'} · ${source.domain||''}`));const links=node('div','links');safeLink(links,'Visit recorded source ↗',source.url);card.append(links);sourcesList.append(card);});
+      } catch(error){sourcesStatus.textContent=error.message||'Could not load source registry.';}
+    }
+    function checklistText() {
+      const lines = ['CivicSathi document checklist', 'Confirm current requirements with the official source before travelling.', ''];
+      output.querySelectorAll('.document-scenario').forEach(card => {
+        lines.push(`${card.dataset.service} — ${card.dataset.scenario}`, `Applies to: ${card.dataset.scope}`);
+        card.querySelectorAll('.document-list li').forEach(li => {
+          const check = li.querySelector('input');
+          lines.push(`${check?.checked ? '[x]' : '[ ]'} ${li.dataset.text}${li.dataset.condition ? ` (${li.dataset.condition})` : ''}`);
+        });
+        lines.push(`Official source: ${card.dataset.source}`, '');
+      });
+      return lines.join('\n');
+    }
+    async function copyChecklist(copyButton) {
+      const value = checklistText();
+      try {
+        await navigator.clipboard.writeText(value);
+        status.textContent = 'Checklist copied. Your checked items are included.';
+      } catch (_) {
+        const helper = document.createElement('textarea');
+        helper.value = value; helper.style.position = 'fixed'; helper.style.opacity = '0';
+        document.body.append(helper); helper.select();
+        const copied = document.execCommand('copy'); helper.remove();
+        status.textContent = copied ? 'Checklist copied. Your checked items are included.' : 'Copy is unavailable in this browser. Use Print checklist instead.';
+      }
+      copyButton.blur();
+    }
+    function render(data) {
+      output.replaceChildren();
+      const answer = node('section', 'answer-card');
+      answer.append(node('h2', 'section-kicker', 'Service match'));
+      answer.append(node('p', 'answer-text', data.answer || 'No grounded summary is available.'));
+      const responseMode = responseLanguage.value;
+      if (responseMode !== 'english') answer.append(node('p','voice-note','తెలుగు సహాయం: ఈ సమాధానం అందుబాటులో ఉన్న ప్రభుత్వ రికార్డుల ఆధారంగా ఉంటుంది. పత్రాల జాబితా మీ పరిస్థితి, జిల్లా, మరియు అధికారిక మూలంలో చూపిన నిబంధనలపై ఆధారపడుతుంది. వెళ్లే ముందు తాజా వివరాలను అధికారిక లింక్ వద్ద నిర్ధారించండి.'));
+      const meta = node('div', 'meta');
+      meta.append(node('span', 'badge', `Language: ${data.language || 'Unknown'}`));
+      meta.append(node('span', 'badge', data.intent?.label ? `Intent: ${data.intent.label.replaceAll('_', ' ').toLowerCase()}` : 'Intent: unclassified'));
+      if (typeof data.intent?.confidence === 'number') meta.append(node('span', 'badge', `Match confidence: ${(data.intent.confidence * 100).toFixed(0)}%`));
+      answer.append(meta); output.append(answer);
+      const serviceResult=(data.results||[]).find(row=>row.record_type==='Service'&&row.service_id);
+      if(serviceResult) activeServiceId=serviceResult.service_id;
+      const contextBar=node('div','task-actions');
+      const contextText=node('span','hint',activeServiceId?`Follow-ups use ${serviceResult?.title||'the last matched service'} in this tab only.`:'No service context saved.');
+      const resetContext=node('button','action-button','Start new search'); resetContext.type='button'; resetContext.addEventListener('click',()=>{activeServiceId='';contextText.textContent='Context cleared for this tab.';});
+      const speak=node('button','action-button','Read answer aloud'); speak.type='button'; speak.addEventListener('click',()=>speakAnswer(data.answer||''));
+      const stopSpeak=node('button','action-button','Stop audio'); stopSpeak.type='button'; stopSpeak.addEventListener('click',()=>window.speechSynthesis?.cancel());
+      contextBar.append(contextText,resetContext,speak,stopSpeak); answer.append(contextBar);
+
+      if (data.documents_requested) {
+        const panel = node('section', 'documents-card');
+        const head = node('div', 'panel-head');
+        head.append(node('h2', '', responseMode === 'english' ? 'Documents to prepare' : responseMode === 'telugu' ? 'సిద్ధం చేసుకోవాల్సిన పత్రాలు' : 'Documents to prepare · సిద్ధం చేసుకోవాల్సిన పత్రాలు'));
+        if (data.document_checklists?.length) {
+          const actions = node('div', 'actions');
+          const copy = node('button', 'action-button', 'Copy checklist'); copy.type = 'button';
+          copy.addEventListener('click', () => copyChecklist(copy));
+          const print = node('button', 'action-button', 'Print checklist'); print.type = 'button';
+          print.addEventListener('click', () => window.print());
+          actions.append(copy, print); head.append(actions);
+        }
+        panel.append(head);
+        panel.append(node('p', 'document-intro', data.document_notice || 'Review each item and confirm with the linked government source. Checked items stay only in this page.'));
+        if (data.document_checklists?.length) {
+          data.document_checklists.forEach((checklist, checklistIndex) => {
+            const scenario = node('article', 'document-scenario');
+            scenario.dataset.service = checklist.service_name || 'Service';
+            scenario.dataset.scenario = checklist.scenario || 'Document checklist';
+            scenario.dataset.scope = checklist.jurisdiction || 'As listed by source';
+            scenario.dataset.source = checklist.source_url || '';
+            scenario.append(node('div', 'result-type', checklist.service_name || 'Service'));
+            const top = node('div', 'scenario-top');
+            const title = document.createElement('div');
+            title.append(node('h3', '', checklist.scenario || 'Document checklist'));
+            title.append(node('p', 'scenario-scope', `Applies to: ${checklist.jurisdiction || 'as listed by source'}`));
+            const progress = node('span', 'progress', `0 of ${checklist.items.length} ready`);
+            top.append(title, progress); scenario.append(top);
+            const list = node('ul', 'document-list');
+            checklist.items.forEach((item, itemIndex) => {
+              const li = document.createElement('li');
+              li.dataset.text = item.text || 'Official source item';
+              li.dataset.condition = item.condition || '';
+              const check = document.createElement('input');
+              check.type = 'checkbox'; check.id = `check-${checklistIndex}-${itemIndex}`;
+              check.setAttribute('aria-label', `Mark ${item.text || 'document'} as ready`);
+              const copy = document.createElement('label'); copy.className = 'item-copy'; copy.htmlFor = check.id;
+            const labels = responseMode === 'english'
+              ? {required:'Required by source', conditional:'Only in some cases', alternative:'Alternative', prerequisite:'Prerequisite', format_note:'File format'}
+              : responseMode === 'telugu'
+                ? {required:'మూలంలో అవసరం', conditional:'కొన్ని సందర్భాల్లో మాత్రమే', alternative:'ప్రత్యామ్నాయం', prerequisite:'ముందస్తు అవసరం', format_note:'ఫైల్ రకం'}
+                : {required:'మూలంలో అవసరం · Required', conditional:'కొన్ని సందర్భాల్లో · Conditional', alternative:'ప్రత్యామ్నాయం · Alternative', prerequisite:'ముందస్తు అవసరం · Prerequisite', format_note:'ఫైల్ రకం · File format'};
+              copy.append(node('span', 'item-label', labels[item.type] || 'Source item'));
+              copy.append(document.createTextNode(item.text || ''));
+              if (item.condition) copy.append(node('span', 'item-condition', item.condition));
+              check.addEventListener('change', () => {
+                li.classList.toggle('is-checked', check.checked);
+                const checked = list.querySelectorAll('input:checked').length;
+                progress.textContent = `${checked} of ${checklist.items.length} ready`;
+              });
+              li.append(check, copy); list.append(li);
+            });
+            scenario.append(list);
+            const source = node('div', 'links');
+            safeLink(source, 'Open official source ↗', checklist.source_url);
+            source.append(node('span', '', `Checked: ${checklist.last_verified || 'date not recorded'}`));
+            if (checklist.source_last_updated && checklist.source_last_updated !== 'Not stated on page') source.append(node('span', '', `Page updated: ${checklist.source_last_updated}`));
+            scenario.append(source); panel.append(scenario);
+          });
+        } else {
+          panel.append(node('p', '', 'No verified checklist is loaded for this exact service and district. Include the service name and your district in the query. Confirm the live Requirements section on the official MeeSeva portal before visiting.'));
+        }
+        output.append(panel);
+      }
+
+      if (data.results?.length) {
+        const resultsBlock = node('section', 'result-block');
+        resultsBlock.append(node('h2', 'results-head', 'Related official records'));
+        data.results.forEach(record => {
+          const card = node('article', 'result');
+          const top = node('div', 'result-top');
+          const heading = document.createElement('div');
+          heading.append(node('div', 'result-type', record.record_type || 'Record'));
+          heading.append(node('h3', '', record.title || 'Untitled record'));
+          top.append(heading);
+          if (typeof record.score === 'number') top.append(node('span', 'score', `Text match ${(record.score * 100).toFixed(0)}%`));
+          card.append(top);
+          if (record.department) card.append(node('p', '', `Department: ${record.department}`));
+          if (record.description) card.append(node('p', '', record.description));
+          if (record.eligibility) card.append(node('p', '', `Eligibility: ${record.eligibility}`));
+          if (record.required_documents) card.append(node('p', '', `Required documents: ${record.required_documents}`));
+          const links = node('div', 'links');
+          safeLink(links, 'Open official service ↗', record.official_url);
+          safeLink(links, 'Open source record ↗', record.source_url);
+          if (record.last_verified) links.append(node('span', '', `Last checked: ${record.last_verified}`));
+          if (links.childNodes.length) card.append(links);
+          if (record.warnings?.length) card.append(node('p', 'warnings', record.warnings.join(' ')));
+          resultsBlock.append(card);
+        });
+        output.append(resultsBlock);
+      } else {
+        output.append(node('div', 'empty', 'No close catalogue records were found. Try the service name and district, or select an example above.'));
+      }
+      if (data.warnings?.length) {
+        const box = node('div', 'warnings');
+        box.append(node('strong', '', 'Please check'));
+        const list = document.createElement('ul');
+        data.warnings.forEach(warning => list.append(node('li', '', warning)));
+        box.append(list); output.append(box);
+      }
+    }
+
+    input.addEventListener('input', () => { queryCount.textContent = `${input.value.length} / 2000`; });
+    document.querySelectorAll('[data-view]').forEach((tab,index,tabs) => {
+      tab.addEventListener('click', () => setView(tab.dataset.view));
+      tab.addEventListener('keydown',event=>{let next=null;if(event.key==='ArrowRight')next=tabs[(index+1)%tabs.length];if(event.key==='ArrowLeft')next=tabs[(index-1+tabs.length)%tabs.length];if(event.key==='Home')next=tabs[0];if(event.key==='End')next=tabs[tabs.length-1];if(next){event.preventDefault();next.focus();setView(next.dataset.view);}});
+    });
+    document.getElementById('browse-submit').addEventListener('click', loadCatalogue);
+    browseQuery.addEventListener('keydown', event => { if (event.key === 'Enter') loadCatalogue(); });
+    browseType.addEventListener('change', loadCatalogue);
+    browseDistrict.addEventListener('change', loadCatalogue);
+    browseDepartment.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();loadCatalogue();}});
+    browseCategory.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();loadCatalogue();}});
+    document.getElementById('task-form').addEventListener('submit',event=>{event.preventDefault();const title=document.getElementById('task-title');const type=document.getElementById('task-type');const taskStatus=document.getElementById('task-status').value;addTask({title:title.value,type:type.value});const items=readTasks();if(items.length){items[0].status=taskStatus;writeTasks(items);}title.value='';renderTasks();});
+    document.getElementById('clear-tasks').addEventListener('click',()=>{if(readTasks().length&&window.confirm('Delete all preparation tasks stored in this browser?')){writeTasks([]);renderTasks();}});
+    document.getElementById('task-search').addEventListener('input',renderTasks);
+    document.getElementById('task-filter').addEventListener('change',renderTasks);
+    document.getElementById('voice').addEventListener('click',startVoice);
+    loadDistrictOptions();
+    document.querySelectorAll('[data-query]').forEach(chip => chip.addEventListener('click', () => {
+      input.value = chip.dataset.query; input.dispatchEvent(new Event('input')); input.focus();
+    }));
+    clearButton.addEventListener('click', () => {
+      input.value = ''; district.value = ''; activeServiceId=''; input.dispatchEvent(new Event('input'));
+      output.replaceChildren(); status.textContent = ''; input.focus();
+    });
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      const baseQuery = input.value.trim();
+      if (!baseQuery) { input.focus(); return; }
+      const query = district.value ? `${baseQuery} in ${district.value}` : baseQuery;
+      button.disabled = true; status.textContent = 'Searching the local catalogues…'; output.replaceChildren();
+      try {
+        const response = await fetch('/api/analyze', {
+          method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({query,context_service_id:activeServiceId})
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'The search failed.');
+        render(data); status.textContent = 'Search complete. Review the source and confirm current requirements.';
+      } catch (error) {
+        status.textContent = error.message || 'Could not reach the local CivicSathi server. Check that it is running and try again.';
+      } finally { button.disabled = false; }
+    });
+
+    function startVoice() {
+      const SpeechRecognition=window.SpeechRecognition||window.webkitSpeechRecognition;
+      const note=document.getElementById('voice-note');
+      const defaultVoiceNote='Choose Telugu + English for natural mixed speech, tap Speak, and review the transcript before searching. Mixed-language recognition can miss words. Voice recognition uses your browser and may send audio to its speech service.';
+      if(!SpeechRecognition){status.textContent='Voice transcription is not available in this browser. Type your query instead.';return;}
+      if(speechRecognition){try{speechRecognition.stop();}catch(_){} speechRecognition=null;document.getElementById('voice').textContent='🎙 Speak';return;}
+      const locale=languageSelect.value==='te-IN-mixed'?'te-IN':languageSelect.value;
+      speechRecognition=new SpeechRecognition(); speechRecognition.lang=locale; speechRecognition.interimResults=true; speechRecognition.maxAlternatives=1;
+      let receivedTranscript=false;
+      let speechHeard=false;
+      let soundDetected=false;
+      document.getElementById('voice').textContent='Stop listening';
+      speechRecognition.onstart=()=>{note.textContent='Listening… speak now.';status.textContent='Listening for speech…';};
+      speechRecognition.onaudiostart=()=>{status.textContent='Microphone permission is on. Waiting for sound…';};
+      speechRecognition.onsoundstart=()=>{soundDetected=true;status.textContent='Sound detected. Speak clearly in the selected language…';};
+      speechRecognition.onspeechstart=()=>{speechHeard=true;status.textContent='Speech detected. Transcribing…';};
+      speechRecognition.onresult=event=>{
+        const results=Array.from(event.results||[]);
+        const transcript=results.map(result=>(result?.[0]?.transcript||'').trim()).filter(Boolean).join(' ');
+        if(!transcript)return;
+        receivedTranscript=true;input.value=transcript;input.dispatchEvent(new Event('input'));
+        status.textContent=results.some(result=>result.isFinal)?'Transcript ready. Review or edit it, then search.':'Hearing you… keep speaking or pause to finish.';
+      };
+      speechRecognition.onnomatch=()=>{status.textContent='Speech was not recognized. Try speaking closer to the microphone or type your query.';};
+      speechRecognition.onerror=event=>{
+        const messages={
+          'not-allowed':'Microphone access is blocked. Allow it for this site in your browser settings, then try again.',
+          'service-not-allowed':'Speech recognition is blocked by the browser. Type your query instead.',
+          'audio-capture':'No microphone was found. Connect or enable a microphone, or type your query.',
+          'no-speech':soundDetected?'Sound reached the microphone, but no words were recognized. Check the selected language and try speaking closer to the mic.':'No sound reached the recognizer. Check the selected microphone and input level in Windows Sound settings.',
+          'network':'The browser speech service could not connect. Check your connection or type your query.',
+          'language-not-supported':'This browser speech service does not support the selected language. Choose another voice language or type your query.',
+          'aborted':'Voice input stopped.'
+        };
+        status.textContent=messages[event.error]||`Voice input failed (${event.error}). Type your query instead.`;
+      };
+      speechRecognition.onend=()=>{
+        speechRecognition=null;document.getElementById('voice').textContent='🎙 Speak';
+        note.textContent=defaultVoiceNote;
+        if(!receivedTranscript&&['Listening for speech…','Microphone permission is on. Waiting for sound…'].includes(status.textContent))status.textContent=speechHeard
+          ?'Speech was detected but no words were returned. Check the selected language and try again.'
+          :soundDetected
+            ?'Sound reached the microphone, but no speech was recognized. Check the selected language and speak clearly.'
+            :'No sound reached the recognizer. In Windows Settings → System → Sound → Input, select and unmute your microphone, then try again.';
+      };
+      try{speechRecognition.start();}catch(_){speechRecognition=null;document.getElementById('voice').textContent='🎙 Speak';status.textContent='Could not start microphone. Check browser permission or type your query.';}
+    }
+    function speakAnswer(text) {
+      if(!('speechSynthesis' in window)){status.textContent='Text-to-speech is not available in this browser.';return;}
+      window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(text);utterance.lang=languageSelect.value==='te-IN-mixed'?'te-IN':languageSelect.value;utterance.onerror=()=>{status.textContent='The browser could not read this response aloud.';};window.speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>

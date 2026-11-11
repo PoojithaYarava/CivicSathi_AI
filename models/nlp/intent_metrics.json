@@ -1,0 +1,327 @@
+{
+  "model_version": "civicsathi-intent-v1",
+  "selected_model": "logistic_regression",
+  "labels": [
+    "APPLICATION_PROCEDURE",
+    "COMPLAINT_REGISTRATION",
+    "COMPLAINT_TRACKING",
+    "DOCUMENT_REQUIREMENTS",
+    "ELIGIBILITY",
+    "FORM_DOWNLOAD",
+    "OFFICIAL_LINK",
+    "PAYMENT",
+    "SCHEME_DISCOVERY",
+    "SCHEME_ELIGIBILITY",
+    "SERVICE_DISCOVERY",
+    "STATUS_CHECK"
+  ],
+  "decision_threshold": 0.35,
+  "random_seed": 42,
+  "dataset_path": "data\\processed\\citizen_queries.csv",
+  "dataset_sha256": "d168bfa4d7291c9aa038a87ffaedaeef1dc6cc83cb10f1989c82d9ad060538a3",
+  "dataset_rows": 1296,
+  "dropped_empty_queries": 0,
+  "dropped_pii_suspects": 0,
+  "split_rows": {
+    "train": 777,
+    "validation": 260,
+    "test": 259
+  },
+  "validation": {
+    "logistic_regression": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0
+    },
+    "linear_svm": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0
+    }
+  },
+  "test": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "APPLICATION_PROCEDURE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 22.0
+      },
+      "COMPLAINT_REGISTRATION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 21.0
+      },
+      "COMPLAINT_TRACKING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 21.0
+      },
+      "DOCUMENT_REQUIREMENTS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 22.0
+      },
+      "ELIGIBILITY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 21.0
+      },
+      "FORM_DOWNLOAD": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 22.0
+      },
+      "OFFICIAL_LINK": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 22.0
+      },
+      "PAYMENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 22.0
+      },
+      "SCHEME_DISCOVERY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 22.0
+      },
+      "SCHEME_ELIGIBILITY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 22.0
+      },
+      "SERVICE_DISCOVERY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 21.0
+      },
+      "STATUS_CHECK": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 21.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 259.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 259.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        21,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        21,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        21,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        21,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        21
+      ]
+    ]
+  },
+  "per_language_test": {
+    "English": {
+      "n": 88,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "Telugu": {
+      "n": 84,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "Telugu-English": {
+      "n": 87,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    }
+  }
+}

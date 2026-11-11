@@ -1,0 +1,30 @@
+{
+  "model_version": "civicsathi-intent-v1",
+  "selected_model": "logistic_regression",
+  "labels": [
+    "APPLICATION_PROCEDURE",
+    "COMPLAINT_REGISTRATION",
+    "COMPLAINT_TRACKING",
+    "DOCUMENT_REQUIREMENTS",
+    "ELIGIBILITY",
+    "FORM_DOWNLOAD",
+    "OFFICIAL_LINK",
+    "PAYMENT",
+    "SCHEME_DISCOVERY",
+    "SCHEME_ELIGIBILITY",
+    "SERVICE_DISCOVERY",
+    "STATUS_CHECK"
+  ],
+  "decision_threshold": 0.35,
+  "random_seed": 42,
+  "dataset_path": "data\\processed\\citizen_queries.csv",
+  "dataset_sha256": "d168bfa4d7291c9aa038a87ffaedaeef1dc6cc83cb10f1989c82d9ad060538a3",
+  "dataset_rows": 1296,
+  "dropped_empty_queries": 0,
+  "dropped_pii_suspects": 0,
+  "split_rows": {
+    "train": 777,
+    "validation": 260,
+    "test": 259
+  }
+}

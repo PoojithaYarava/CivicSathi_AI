@@ -8,6 +8,8 @@ venv/
 .ipynb_checkpoints/
 .pytest_cache/
 .vscode/
+models/nlp/*.joblib
+models/nlp/*_index*
 
 # Environment / secrets
 .env

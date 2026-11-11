@@ -3,10 +3,20 @@ telangana:
   state_services: "https://www.telangana.gov.in/services/state-services/"
   forms: "https://www.telangana.gov.in/services/public-utility-forms/"
   central_services: "https://www.telangana.gov.in/services/central-services/"
+  meeseva_faq: "https://mgov.telangana.gov.in/faqnew.html"
+  prajavani: "https://prajavani.cgg.gov.in/"
 meeseva:
   services: "https://ts.meeseva.telangana.gov.in/TSDeptPortal/UserInterface/Services.html"
+ghmc:
+  birth_faq: "https://www.ghmc.gov.in/faq_births.aspx"
+  birth_process: "https://ghmc.gov.in/Birth.aspx"
+  grievance_faq: "https://www.ghmc.gov.in/howdoi.aspx"
+  general_grievance_form: "https://www.ghmc.gov.in/CSC_Applications/General_Grievances.pdf"
+suryapet:
+  caste_service: "https://suryapet.telangana.gov.in/service/caste-certificate/"
 hyderabad:
   homepage: "https://hyderabad.telangana.gov.in/"
+  public_grievances: "https://hyderabad.telangana.gov.in/"
 tg_dex:
   databank: "https://tgdex.telangana.gov.in/data-bank"
 india:
